@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="studio" content="webstudio for business, initial-scale=1.0">
+    <title>WebStudio</title>
+</head>
+
+<body>
+   <header>
+        <h2 class="logo" style="position: relative;left: 6%"> 
+            <a href="#home" style="color:hsl(207, 90%, 54%)"><b>Web</b></a>
+            <a href="#home" style="color:black"><b>Studio</b></a>
+        </h2>
+        
+        
+        <nav class="navbar">               
+             <ul class="ulnav">
+                <li class="linav"><a href="#home" style="color:hsl(207, 90%, 54%)">Studio</a></li>
+                <li class="linav"><a href="#Portofolio">Portofolio</a></li>
+                <li class="linav"><a href="#Contacts">Contacts</a></li>
+            </ul> 
+         </nav>
+
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="tel:+1 212-772-4150" style="color:hsl(0, 0%, 46%)">+1 212-772-4150</a>        
+   </header>
+    <main>
+        <section class="head">
+            <div>
+                <h1 style="color: #fffcf9;"> EFFECTIVE SOLUTIONS FOR <br> YOUR BUSINESS </h1>
+                <button style="background-color:hsl(207, 90%, 54%)" class="button"> <p style="color: #fffcf9;"> Request our services</p></button>
+            </div>
+        </section>
+        <section>
+                <div class="middle">
+                    <div><a><h4>ATTENTION TO DETAILS</h4> <p>We go into all the details and <br> processes  of your business <br> to  develop  a customized solution.</p> </a> </div>
+                    <div><a><h4>PUNCTUALITY </h4> <p>With us, you can feel safe and secure.<br> An important principle of the company: <br>respect your time and deadlines. </p> </a></div>
+                    <div><a><h4>PLANNING </h4> <p> You will be able to observe and <br>   participate in every phase of solution <br> development and implementation. </p> </a></div>
+                    <div><a><h4>MODERN TECHNOLOGIES </h4> <p>We use innovative tools to solve <br> assigned tasks. It's time to simplify <br> work processes. </p> </a> </div>
+                </div>
+
+                <div>
+                    <div>
+                        <h2 style="text-align: center;"><b>What we do</b></h2> <br>
+                    </div>
+                    <div class="middle2">
+                        <img src="images/tst.png" alt="writing at keyboard" height=300 width=400> </img>
+                        <img src="images/mobil + tst.png" alt="women with mobile in her hand" height=300 width=400 />
+                        <img src="images/tablet.png" alt="Grafic tablet" height=300 width=400 />
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div>
+            <h2 style="text-align: center;"><b>Our Team</b></h2>
+            </div>
+
+            <div class="center">
+            <div><img src="images/christopher walker.jpg" alt="men foto" height=260 width=270 />
+                <figcaption><b>Christopher Walker</b><br>Product Designer</figcaption></div>
+            <div><img src="images/kylie evans.jpg" alt="woman foto" height=260 width=270/>
+                <figcaption><b>Kylie Evans</b><br>Frontend Developer</figcaption></div>
+            <div><img src="images/ryan harris.jpg" alt="men foto" height=260 width=270 />
+                <figcaption><b>Ryan Harris</b><br> Marketing</figcaption></div>
+            <div><img src="images/tyler moore.jpg" alt="men foto" height=260 width=270 />
+                <figcaption><b>Tyler Moore</b><br> Ui Designer </figcaption></div>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+    <footer class="footer">
+        <div style="position: relative;left: 6%">
+        <div><h4><a href="#home" style="color:hsl(207, 90%, 54%)"><b>Web</b></a><a href="#home" style="color:white"><b>Studio</b></a></h4></div>
+       
+        <address style="color:white"> <p>695 Park Ave, NY 10065, USA </p>
+        <a href="mailto:info@devstudio.com"> info@devstudio.com </a><br>
+        <a href="tel:+1 212-772-4150" style="color:hsl(0, 0%, 46%)">+1 212-772-4150</a>
+       </address> 
+   </footer>
+</body>
+</html>
+
+<!--Styles-->
+
+<style>
+    .logo {
+        text-decoration:none;
+        text-align: left;
+        width: auto;
+        display: flex;
+        word-spacing: -9px;
+        display: inline-block;   
+        width: 25%; 
+    } 
+
+    .navbar {
+      text-decoration:none;    
+      font-size: 16px;
+      display: inline-block;
+      font-weight: bold;
+      width: 33%;
+      word-spacing: -10px; 
+     }
+    
+    .ulnav {
+         display:flex;
+         list-style:none;
+         padding: 0px;
+         justify-content: space-between;
+     }
+
+    .linav {
+     display: inline-block;
+     width: 25%;
+     }
+
+    .head {
+        background-color:#12121f;
+        width: auto;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+     }
+
+    .middle {
+        display: flex;
+        grid-template-columns: repeat(5, 10fr);
+        gap:25px;
+        justify-content:space-around;
+        display: flex;
+        text-align: left;
+     }
+    .middle2 {
+        display:flex;
+        justify-content:space-around;
+        margin: 0 150px 0 150px;
+        align-items: center;
+     }
+    .center {
+        display: flex;
+        justify-content:space-between;
+        margin: 0 150px 0 150px;
+        text-align: center;
+     }
+    .footer {
+        background-color:#12121f;
+        width: auto;
+        height: 160px;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        align-items: left;
+        
+     }
