@@ -1,0 +1,110 @@
+
+html {
+    font-family:  Roboto, Raleway, sans-serif
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color:#FFFFFF;
+    width: 1600px;
+    height: 2348px;
+    top: -3267px;
+    left: -3897px;
+}
+
+.navigation .navbar ul li {
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.navigation .logo a {
+    text-decoration: none;   
+} 
+
+.navigation .navbar a{
+    text-decoration: none;
+}
+
+.head-main {
+    background-color:#2F303A;
+    width: 1600px;
+    height: 600px;
+    top: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.middle-main {
+    background-color:#FFFFFF;
+    width: 1600px;
+    height: 600px;
+    top: 80px;
+    text-align: center;
+    display: inline-block; 
+}
+
+.middle-main .whatwedo {
+    width: 1170px;
+    height: 386px;
+    top: 969px;
+    left: 215px;
+    justify-content: center;
+}
+
+.whatwedoimg img {
+    width: 370px;
+    height: 294px;
+    top: 1061px;
+}
+
+
+.footer-main {
+    background-color:#F5F4FA;
+    width: 1600px;
+    height: 648px;
+    top: 1449px;
+    align-items: center;
+    text-align: center;
+    display: inline-block;     
+}
+
+.ourteam {
+    background-color:#FFFFFF;
+    width: 270px;
+    height: 368px;
+    top: 1635px;
+    box-shadow: 0px 2px 0px grey;
+    -webkit-box-shadow: 0px 2px 20px grey;
+ 
+   
+}
+
+.footer-main .footer-maine-img {
+    width: 1170px;
+    height: 368px;
+    top: 1635px;
+    left: 215px;
+    display:inline-flex;
+    justify-content:space-around;
+   
+}
+
+.footer {
+    background-color:#2F303A;
+    width: 1600px;
+    height: 251px;
+    top: 2097px;
+    display:inline-block;
+    text-align: left;
+    
+    
+ }
