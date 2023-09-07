@@ -1,8 +1,12 @@
 
 html {
-    font-family:  Roboto, Raleway, sans-serif
+    font-family:  Roboto, Raleway, sans-serif;
+    --logo-text: "raleway", sans-serif;
+    --head-text: "roboto", sans-serif;
+    --link-color-hover: #2196F3;
 }
 
+//* homepage style*/
 
 h1,
 h2,
@@ -10,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Roboto, sans-serif;
+    font-family:var(--head-text)
 }
 
 body {
@@ -21,17 +25,50 @@ body {
     left: -3897px;
 }
 
-.navigation .navbar ul li {
-    text-decoration: none;
-    display: inline-block;
+.navigation {
+    text-align: center;
+    position: relative;
+}
+
+.logo-text a {
+    width: 145px;
+    height: 31px;
+    top: 24px;
+    left: 215px;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-family:var(--logo-text);
+    text-decoration: none;   
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    align-items: center;
     
 }
-.navigation .logo a {
-    text-decoration: none;   
-} 
 
-.navigation .navbar a{
+.navbar a {
+    float: none;
+    padding: 14px 25px;
     text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color:#2196F3; 
+}
+.navbar a:active {
+    color: red;
+}
+
+
+.navcontact {
+    float: right;
+    text-decoration: none; 
 }
 
 .head-main {
@@ -41,6 +78,14 @@ body {
     top: 80px;
     text-align: center;
     color: #FFFFFF;
+    
+}
+
+.head-main div {
+    width: 696px;
+    height: 120px;
+    top: 280px;
+    left: 452px;
 }
 
 .middle-main {
@@ -49,7 +94,7 @@ body {
     height: 600px;
     top: 80px;
     text-align: center;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .middle-main .whatwedo {
@@ -88,7 +133,7 @@ body {
    
 }
 
-.footer-main .footer-maine-img {
+.footer-main .footer-main-img {
     width: 1170px;
     height: 368px;
     top: 1635px;
@@ -97,14 +142,85 @@ body {
     justify-content:space-around;
    
 }
-
 .footer {
     background-color:#2F303A;
     width: 1600px;
-    height: 251px;
-    top: 2097px;
-    display:inline-block;
-    text-align: left;
-    
-    
+    height: 251px;   
  }
+
+
+ //* Portofolio style*/
+
+ .productscontainer {
+    background-color:#F5F4FA;
+    width: 1170px;
+    height: 1360px;
+    top: 174px;
+    left: 215px;
+    border: 1px;  
+    align-items: center;
+ }
+ .productnav {
+   position: inherit;
+    align-items: center; 
+ }
+
+.productnav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+.buttonproduct {
+    list-style-type: none;
+    background-color: white ;
+}
+
+.productnav {
+    background-color: #333333;
+  }
+  
+  .productnav .buttonproduct:link,
+  .productnav .buttonproduct:visited {
+    color: var(--link-color);
+  }
+  
+  li .button:hover {
+    background-color: var(--link-color-hover);
+    color:white;
+  }
+  
+  .productnav .buttonproduct a:active {
+    color:
+  }
+
+  .button {
+    background-color: #F5F4FA;
+    border: none;
+    color: #000000;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: var(--head-text)
+  }
+  
+.productsimg {
+    background-color:#EEEEEE;
+    width: 370px;
+    height: 404px;
+    top: 262px;
+    -webkit-box-shadow: 0px 1px 4px grey;   
+}
+
+.productstore {
+    width: 1170px;
+    height: 1360px;
+    top: 174px;
+    left: 215px;
+    display: flex;
+    align-items: center;
+    
+}
+    
+
