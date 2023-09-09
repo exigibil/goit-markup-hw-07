@@ -256,20 +256,9 @@ body {
 
 //* Portofolio style*/
 
-.productscontainer {
-  background-color: #f5f4fa;
-  width: 1170px;
-  height: 1360px;
-  top: 174px;
-  left: 215px;
-  border: 1px;
-  display: inline-block;
-  justify-items: center;
-}
 
-.buttonproduct .button {
-  margin: 0px 5px 0px;
-  display: inline;
+.buttonproduct {
+    list-style-type: none;
 }
 
 .productnav ul {
@@ -322,7 +311,6 @@ li .button:focus {
   height: 404px;
   top: 262px;
   border: 1px;
-  text-align: 10px 20px 30px;
   display: block;
 }
 
