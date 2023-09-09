@@ -6,7 +6,7 @@ html {
   --link-color-hover: #2196f3;
 }
 
-//* homepage style*/
+/* homepage style*/
 
 h1,
 h2,
@@ -254,7 +254,7 @@ body {
   margin: 50px 150px;
 }
 
-//* Portofolio style*/
+/* Portofolio style*/
 
 
 .buttonproduct {
@@ -305,7 +305,7 @@ li .button:focus {
 }
 
 .productsimg {
-  -webkit-box-shadow: 0px 1px 2px grey;
+  box-shadow: 0px 1px 2px grey;
   margin: 0px 0px 50px 17px;
   width: 370px;
   height: 404px;
