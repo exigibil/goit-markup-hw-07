@@ -207,7 +207,7 @@ body {
   top: 1635px;
   left: 215px;
   display: inline-flex;
-  justify-content: space-around;
+  justify-content:center;
 }
 .footer {
   background-color: #2f303a;
