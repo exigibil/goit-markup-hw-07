@@ -1,6 +1,5 @@
 
 html {
-  font-family: Roboto, Raleway, sans-serif;
   --logo-text: "raleway", sans-serif;
   --head-text: "roboto", sans-serif;
   --link-color-hover: #2196f3;
@@ -18,7 +17,7 @@ h6 {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Raleway, sans-serif;
   background-color: #ffffff;
   width: 1600px;
   height: 2348px;
@@ -54,11 +53,13 @@ body {
   overflow: hidden;
   background-color: #ffffff;
   overflow: hidden;
+  line-height: 16.41px;
 }
 
 .topnav {
   margin-left: -100px;
   display: inline-flex;
+  padding-bottom: 30px;
 }
 
 .navbar a {
@@ -87,7 +88,7 @@ body {
   color: #757575;
   font-weight: 500;
   margin-right: 10px;
-  padding: 0px 20px;
+  
 }
 
 .navcontact a:hover {
@@ -105,12 +106,12 @@ body {
   top: 80px;
   text-align: center;
   color: #ffffff;
-  margin: 20px 50px;
+
 }
 
 .solutions {
   display: inline;
-  margin: 10px 449px 0px;
+  padding: 10px 449px 0px;
   font-weight: 900;
   font-size: 44px;
   justify-content: center;
@@ -124,20 +125,19 @@ body {
 }
 
 .btnservice {
-  background-color: #2196f3;
-  width: 200px;
-  height: 50px;
-  top: 430px;
-  left: 700px;
-  padding: 4px;
+  background-color: var(--link-color-hover);
+  padding: 10px 20px;
   color: #ffffff;
-  font-family: roboto;
+  font-family: var(--head-text)
+  text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 0.96px;
   font-weight: 700;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--link-color-hover);
+  
 }
 
 .btnservice:hover {
@@ -265,13 +265,14 @@ body {
   margin: 15px;
   align-content: center;
   align-items: center;
+  width: 100%;
 
 }
 
 
 .buttonproduct li {
-  width: 595px;
-  height: 45px;
+  width: 100%;
+  height: 100%;
   top: 174px;
   list-style-type: none;
   display:inline;
@@ -279,8 +280,12 @@ body {
 }
 
 .buttonproduct button {
-  font-weight: 500;
+  font-family: Roboto;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .productnav .buttonproduct:link,
@@ -296,20 +301,18 @@ li .button:hover {
 }
 
 
-.currentweb:visited {
+.buttonproduct a:active,
+.currentweb:focus {
   color: var(--link-color-hover);
 }
 
-.buttonproduct a:active {
-  color: var(--link-color-hover);
-}
+
 
 .buttonproduct .button {
   background-color: #f5f4fa;
   border: none;
   color: #000000;
   padding: 16px 35px;
-  text-align: center;
   text-decoration: none;
   font-size: 16px;
   font-family: var(--head-text);
