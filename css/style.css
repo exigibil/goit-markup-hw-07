@@ -131,8 +131,13 @@ body {
   left: 700px;
   padding: 4px;
   color: #ffffff;
-  font-size: 90%;
+  font-family: roboto;
+  font-size: 16px;
+  letter-spacing: 0.96px;
+  font-weight: 700;
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btnservice:hover {
@@ -242,11 +247,12 @@ body {
   padding: 10px 0px;
 }
 
+.footeradress address a:focus,
 .footeradress address a:hover {
   color: var(--link-color-hover);
 }
 
-.footeradress address a:focus {
+a .current:active {
   color: var(--link-color-hover);
 }
 
