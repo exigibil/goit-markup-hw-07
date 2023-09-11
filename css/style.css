@@ -252,9 +252,6 @@ body {
   color: var(--link-color-hover);
 }
 
-a .current:active {
-  color: var(--link-color-hover);
-}
 
 .footerlogoadress {
   display: inline-block;
@@ -268,6 +265,7 @@ a .current:active {
   margin: 15px;
   align-content: center;
   align-items: center;
+
 }
 
 
@@ -282,22 +280,24 @@ a .current:active {
 
 .buttonproduct button {
   font-weight: 500;
+  font-size: 16px;
 }
 
 .productnav .buttonproduct:link,
 .productnav .buttonproduct:visited {
-  color: var(--link-color);
+  color: var(--link-color-hover);
 }
 
+li .button:focus,
 li .button:hover {
   background-color: var(--link-color-hover);
   color: white;
   border-radius: 4px;
 }
 
-li .button:focus {
-  background-color: var(--link-color-hover);
-  color: white;
+
+.currentweb:visited {
+  color: var(--link-color-hover);
 }
 
 .buttonproduct a:active {
