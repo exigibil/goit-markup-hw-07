@@ -272,10 +272,11 @@ body {
 .productscontainer {
   width: 100%;
   margin-top: 94px;
-  display:flex;
-  width: 100%;
   justify-content: center;
-  display:inline-block;
+  display:flexbox;
+  align-items: center;
+  align-content: center;
+  
 }
 
 
@@ -329,8 +330,10 @@ li .button:hover {
 
 .productstore {
   padding: 50px;
-  display: grid | inline-grid;
-  
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+ 
 }
 
  
