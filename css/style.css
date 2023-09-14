@@ -29,7 +29,7 @@ body {
 .nav-container {
   display: flex;  
   border-bottom: 1px solid #ECECEC;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -110,25 +110,30 @@ body {
 .head-main {
   background-color: #2f303a;
   width: 100%;
-  top: 80px;
+  height: 600px;
   text-align: center;
   color: #ffffff;
 
 }
 
+.headmain-container {
+  display: block;
+  padding-top: 5%;
+   
+}
+
 .solutions {
-  display: inline;
-  padding: 10px 449px 0px;
   font-weight: 900;
   font-size: 44px;
-  justify-content: center;
+  justify-content:center;
+
 }
 
 .buttonservice {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: -60px;
+  
+  
 }
 
 .btnservice {
@@ -144,7 +149,6 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: 1px solid var(--link-color-hover);
-  
 }
 
 .btnservice:hover {
@@ -222,7 +226,7 @@ body {
 .footer {
   background-color: #2f303a;
   width: 100%;
-  height: 251px;
+
 }
 
 .logo-text-footer a {
@@ -265,28 +269,43 @@ body {
 
 /* Portofolio style*/
 
-.productscontainer div {
-  display:flex;
-  justify-content: center;
+.productscontainer {
   width: 100%;
+  margin-top: 94px;
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  display:inline-block;
 }
+
 
 
 .buttonproduct {
-  width: 100%;
+  width: 516px;
+  height: 38px;
   top: 174px;
+  left: 542px;
   list-style-type: none;
   display: flex;
-  justify-content:center;
+  justify-content:space-around;
+  margin: 0;
 }
 
-.buttonproduct button {
-  font-family: Roboto;
-  font-size: 16px;
+.buttonproduct .button {
+  background-color: #f5f4fa;
+  font-family: var(--head-text);
+  border: none;
+  color: #000000;
+  text-decoration: none;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 38px;
   letter-spacing: 0.03em;
-  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform:none;
+  justify-content: center;
+  padding: 6px 17px;
 }
 
 .productnav .buttonproduct:link,
@@ -308,25 +327,24 @@ li .button:hover {
 }
 
 
-
-.buttonproduct .button {
-  background-color: #f5f4fa;
-  border: none;
-  color: #000000;
-  justify-content: left;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: var(--head-text);
-  cursor: pointer;
+.productstore {
+  padding: 50px;
+  display: grid | inline-grid;
 }
 
-.productsimg {
+ 
+
+.productstore .productsimg {
   box-shadow: 0px 1px 1px grey;
-  width: 100%;
+  border: 1px;
+  width: 370px;
   height: 404px;
   top: 262px;
-  border: 1px;
-  
+  left: 615px;
+  display:inline-table;
+  flex: 1 1 150px;
+
+
 }
 
 
@@ -334,5 +352,6 @@ li .button:hover {
 .productstore div {
   display: flexbox;
   width: 1200px;
-  flex-basis: calc(100% - 3 )
+  
+  
 }
