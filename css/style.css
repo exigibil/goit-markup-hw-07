@@ -1,6 +1,5 @@
 
 html {
-  font-family: Roboto, Raleway, sans-serif;
   --logo-text: "raleway", sans-serif;
   --head-text: "roboto", sans-serif;
   --link-color-hover: #2196f3;
@@ -18,18 +17,21 @@ h6 {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Raleway, sans-serif;
   background-color: #ffffff;
-  width: 1600px;
-  height: 2348px;
+  width: 100%;
   top: -3267px;
   left: -3897px;
   color: #000000;
+  margin: 0;
 }
 
-.navigation {
-  text-align: center;
-  position: relative;
+.nav-container {
+  display: flex;  
+  border-bottom: 1px solid #ECECEC;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-text a {
@@ -37,8 +39,6 @@ body {
   height: 31px;
   top: 24px;
   left: 215px;
-  float: left;
-  padding: 1px;
   font-size: 24px;
   font-family: var(--logo-text);
   text-decoration: none;
@@ -50,29 +50,34 @@ body {
   color: #2196f3;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #ffffff;
-  overflow: hidden;
+.topnav {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.topnav {
-  margin-left: -100px;
-  display: inline-flex;
+.navbar ul {
+  background-color: #ffffff;
+  overflow: hidden;
+  line-height: 16.41px;
+  display: flex;
+  width: 405px;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 .navbar a {
-  float: none;
-  padding: 14px 55px;
   text-decoration: none;
   color: black;
   font-weight: 500;
 }
 
-.navbar a:hover {
+.navbar .currentweb {
   color: var(--link-color-hover);
 }
 
+.navbar a:hover,
 .navbar a:focus {
   color: var(--link-color-hover);
 }
@@ -81,13 +86,17 @@ body {
   color: red;
 }
 
+.navcontact {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navcontact a {
   text-decoration: none;
-  display: inline-flex;
   color: #757575;
   font-weight: 500;
-  margin-right: 10px;
-  padding: 0px 20px;
 }
 
 .navcontact a:hover {
@@ -100,39 +109,46 @@ body {
 
 .head-main {
   background-color: #2f303a;
-  width: 1600px;
+  width: 100%;
   height: 600px;
-  top: 80px;
   text-align: center;
   color: #ffffff;
-  margin: 20px 50px;
+
+}
+
+.headmain-container {
+  display: block;
+  padding-top: 5%;
+   
 }
 
 .solutions {
-  display: inline;
-  margin: 10px 449px 0px;
   font-weight: 900;
   font-size: 44px;
-  justify-content: center;
+  justify-content:center;
+
 }
 
 .buttonservice {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: -60px;
+  
+  
 }
 
 .btnservice {
-  background-color: #2196f3;
-  width: 200px;
-  height: 50px;
-  top: 430px;
-  left: 700px;
-  padding: 4px;
+  background-color: var(--link-color-hover);
+  padding: 10px 20px;
   color: #ffffff;
-  font-size: 90%;
+  font-family: var(--head-text)
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.96px;
+  font-weight: 700;
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--link-color-hover);
 }
 
 .btnservice:hover {
@@ -157,16 +173,14 @@ body {
 
 .middle-main {
   background-color: #ffffff;
-  width: 1600px;
-  height: 600px;
+  width: 100%;;
   top: 80px;
   text-align: center;
   display: inline-block;
 }
 
 .middle-main .whatwedo {
-  width: 1170px;
-  height: 386px;
+  width: 100%;
   top: 969px;
   left: 215px;
   justify-content: center;
@@ -184,8 +198,7 @@ body {
 
 .footer-main {
   background-color: #f5f4fa;
-  width: 1600px;
-  height: 648px;
+  width: 100%;
   top: 1449px;
   align-items: center;
   text-align: center;
@@ -199,6 +212,7 @@ body {
   top: 1635px;
   box-shadow: 0px 2px 0px grey;
   -webkit-box-shadow: 0px 2px 20px grey;
+  margin: 5px 15px 0px;
 }
 
 .footer-main .footer-main-img {
@@ -211,8 +225,8 @@ body {
 }
 .footer {
   background-color: #2f303a;
-  width: 1600px;
-  height: 251px;
+  width: 100%;
+
 }
 
 .logo-text-footer a {
@@ -241,91 +255,107 @@ body {
   padding: 10px 0px;
 }
 
+.footeradress address a:focus,
 .footeradress address a:hover {
   color: var(--link-color-hover);
 }
 
-.footeradress address a:focus {
-  color: var(--link-color-hover);
-}
 
 .footerlogoadress {
   display: inline-block;
   margin: 50px 150px;
+  
 }
 
 /* Portofolio style*/
 
-
-.buttonproduct {
-    list-style-type: none;
+.productscontainer {
+  width: 100%;
+  margin-top: 94px;
+  justify-content: center;
+  display:flexbox;
+  align-items: center;
+  align-content: center;
+  
 }
 
-.productnav ul {
+
+
+.buttonproduct {
   width: 516px;
   height: 38px;
   top: 174px;
-  list-style-type: none;
-  display: inline-flex;
-  margin: 40px 400px 55px;
-  justify-content: center;
   left: 542px;
+  list-style-type: none;
+  display: flex;
+  justify-content:space-around;
+  margin: 0;
+}
+
+.buttonproduct .button {
+  background-color: #f5f4fa;
+  font-family: var(--head-text);
+  border: none;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform:none;
+  justify-content: center;
+  padding: 6px 17px;
 }
 
 .productnav .buttonproduct:link,
 .productnav .buttonproduct:visited {
-  color: var(--link-color);
+  color: var(--link-color-hover);
 }
 
+li .button:focus,
 li .button:hover {
   background-color: var(--link-color-hover);
   color: white;
   border-radius: 4px;
 }
 
-li .button:focus {
-  background-color: var(--link-color-hover);
-  color: white;
-}
 
-.buttonproduct a:active {
+.buttonproduct a:active,
+.currentweb:focus {
   color: var(--link-color-hover);
 }
 
-.buttonproduct .button {
-  background-color: #f5f4fa;
-  border: none;
-  color: #000000;
-  padding: 16px 35px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: var(--head-text);
-  cursor: pointer;
+
+.productstore {
+  padding: 50px;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+ 
 }
 
-.productsimg {
-  box-shadow: 0px 1px 2px grey;
-  margin: 0px 0px 50px 17px;
+ 
+
+.productstore .productsimg {
+  box-shadow: 0px 1px 1px grey;
+  border: 1px;
   width: 370px;
   height: 404px;
   top: 262px;
-  border: 1px;
-  display: block;
+  left: 615px;
+  display:inline-table;
+  flex: 1 1 150px;
+
+
 }
 
-.productsimg figcaption {
-  margin: 15px 20px 0px;
-  padding: 10px 10px 40px;
-}
 
-.productsimg figcaption b {
-  margin: 0px 0px 0px;
-  padding: 1000px 0px 40px;
-}
 
-.productstore {
-  display: inline-flex;
-  margin-left: 100px;
+.productstore div {
+  display: flexbox;
+  width: 1200px;
+  
+  
 }
-
