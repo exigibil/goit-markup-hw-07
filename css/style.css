@@ -159,42 +159,60 @@ body {
   border: 2px solid var(--link-color-hover);
 }
 
-.column {
-  float: left;
-  width: 25%;
+
+
+.aboutus {
+  padding: 94px;
+  display: flex;
+  width: 1200px;
+  margin: auto;
+
 }
 
-.aboutus::after {
-  content: "";
-  display: table;
-  clear: both;
-  margin: 50px 0px;
+.column {
+  float: left;
+  width: 270px;
+  height: 75px;
+  margin: 0 30px;
+  text-align: justify;
 }
 
 .middle-main {
   background-color: #ffffff;
   width: 100%;;
-  top: 80px;
   text-align: center;
-  display: inline-block;
+  display: flexbox;
+  margin: 0;
 }
 
-.middle-main .whatwedo {
-  width: 100%;
-  top: 969px;
-  left: 215px;
+.whatwedo-container {
+  display: block;
+  margin: auto;
+  padding: 94px;
+  
+}
+
+.whatwedo-container .whatwedoimg {
+  width: 1200px;
+  height: 368px;
+  display: inline-flex;
+  justify-content:center;
+}
+
+.whatwedo-container div {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: inline-block;
+  height: auto;
 }
 
-.whatwedoimg img {
+.whatwedoimg div img {
+  margin: 0px 30px;
   width: 370px;
   height: 294px;
-  top: 1061px;
-  margin: 30px 0px;
+  align-items: center;
+
 }
+
 
 .footer-main {
   background-color: #f5f4fa;
@@ -206,8 +224,12 @@ body {
 
 .ourteam-container {
   display: block;
-  padding-top: 4%;
-  
+  padding: 0px 215px;  
+}
+
+.ourteam-container div h2 {
+  margin: auto;
+  padding: 94px 0 50px 0;
 }
 
 .ourteam {
@@ -221,10 +243,8 @@ body {
 }
 
 .footer-main .footer-main-img {
-  width: 1170px;
+  width: 1200px;
   height: 368px;
-  top: 1635px;
-  left: 215px;
   display: inline-flex;
   justify-content:center;
 }
@@ -275,15 +295,41 @@ body {
 /* Portofolio style*/
 
 .productscontainer {
-  width: 100%;
-  margin-top: 94px;
+  width: 1200px;
+  padding: 94px 215px;
+  display:block; 
   justify-content: center;
-  display:flexbox;
-  align-items: center;
-  align-content: center;
-  
+  margin: 0;
 }
 
+
+.productscontainer .productnav {
+  justify-content: center;
+  display: flex;
+}
+
+.productstore {
+  width: 100%;
+  height: 1360px;
+}
+
+.products .productsimg div {
+ margin: 20px 24px;
+
+
+}
+
+.productscontainer .productsimg {
+  /*/box-shadow: 0px 1px 1px #EEEEEE; /*/
+  border-style:solid #EEEEEE;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  display: inline-table;
+  column-gap: 20px;
+  height: 404px;
+  width: 370px;
+}
 
 
 .buttonproduct {
@@ -334,32 +380,4 @@ li .button:hover {
 
 
 
-.productstore {
-  display:flexbox;
-  gap: 30px;
-  flex-basis: calc((100%-60px)/3);
-}
-
  
-
-.productstore .productsimg {
-  box-shadow: 0px 1px 1px grey;
-  border: 1px;
-  width: 370px;
-  height: 404px;
-  top: 262px;
-  left: 615px;
-  display:inline-table;
-  flex: 1 1 150px;
-
-
-}
-
-
-
-.productstore div {
-  display: flexbox;
-  width: 1200px;
-  
-  
-}
