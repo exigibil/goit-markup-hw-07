@@ -126,14 +126,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   justify-content:center;
-
 }
 
 .buttonservice {
   display: flex;
-  justify-content: center;
-  
-  
+  justify-content: center; 
 }
 
 .btnservice {
@@ -188,8 +185,11 @@ body {
 .whatwedo-container {
   display: block;
   margin: auto;
-  padding: 94px;
   
+}
+.whatwedo {
+  padding: 94px 215px;
+
 }
 
 .whatwedo-container .whatwedoimg {
@@ -197,16 +197,17 @@ body {
   height: 368px;
   display: inline-flex;
   justify-content:center;
+  padding: 50px 30px;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
 }
 
-.whatwedo-container div {
-  display: flex;
-  justify-content: center;
-  height: auto;
+.whatwedo div h2 {
+  margin: 0;
 }
 
 .whatwedoimg div img {
-  margin: 0px 30px;
   width: 370px;
   height: 294px;
   align-items: center;
@@ -224,7 +225,8 @@ body {
 
 .ourteam-container {
   display: block;
-  padding: 0px 215px;  
+  padding: 0px 215px;
+  
 }
 
 .ourteam-container div h2 {
@@ -234,12 +236,17 @@ body {
 
 .ourteam {
   background-color: #ffffff;
-  width: 100%;
+  width: 270px;
   height: 368px;
-  top: 1635px;
   box-shadow: 0px 2px 0px grey;
   -webkit-box-shadow: 0px 2px 20px grey;
-  margin: 5px 15px 0px;
+  margin: 0px 0px 0px;
+  justify-content: center;
+}
+
+.ourteam img {
+  width: 270px;
+  height: 260px;
 }
 
 .footer-main .footer-main-img {
@@ -247,6 +254,9 @@ body {
   height: 368px;
   display: inline-flex;
   justify-content:center;
+  list-style-type: none;
+  margin: 0;
+  gap: 30px;
 }
 .footer {
   background-color: #2f303a;
@@ -295,42 +305,48 @@ body {
 /* Portofolio style*/
 
 .productscontainer {
-  width: 1200px;
+  top: 174px;
+  left: 215px;
+  border: 1px;
   padding: 94px 215px;
-  display:block; 
   justify-content: center;
-  margin: 0;
+  display:flexbox;
 }
 
+.productscontainer ul {
+  margin: auto;
+}
 
-.productscontainer .productnav {
-  justify-content: center;
+.products {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
 }
 
-.productstore {
-  width: 100%;
-  height: 1360px;
+
+.productsimg {
+  border: 1px solid #EEEEEE;
+  list-style-type: none;
+  height: auto;
+  justify-content: center;
+  display: flexbox;
+  height: 404px;
+  width: 370px;
+  flex-basis: calc((100% - 90px)/3);
+}
+
+.productsimg img {
+  width: 370px;
+  height: 294px;
+  top: 262px;
+  left: 215px;
+
 }
 
 .products .productsimg div {
- margin: 20px 24px;
-
-
-}
-
-.productscontainer .productsimg {
-  /*/box-shadow: 0px 1px 1px #EEEEEE; /*/
-  border-style:solid #EEEEEE;
-  max-width: 100%;
-  height: auto;
-  justify-content: center;
-  display: inline-table;
-  column-gap: 20px;
-  height: 404px;
-  width: 370px;
-}
-
+  margin: 20px 24px;
+ }
 
 .buttonproduct {
   width: 516px;
@@ -340,8 +356,8 @@ body {
   list-style-type: none;
   display: flex;
   justify-content:space-around;
-  margin: 0;
 }
+
 
 .buttonproduct .button {
   background-color: #f5f4fa;
@@ -354,10 +370,10 @@ body {
   letter-spacing: 0.03em;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 4px;
   text-transform:none;
   justify-content: center;
   padding: 0 18px;
+  border-radius: 4px;
 }
 
 .productnav .buttonproduct:link,
