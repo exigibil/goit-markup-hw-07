@@ -26,6 +26,10 @@ body {
   margin: 0;
 }
 
+section {
+  padding: 94px;
+}
+
 .nav-container {
   display: flex;  
   border-bottom: 1px solid #ECECEC;
@@ -43,7 +47,7 @@ body {
   font-family: var(--logo-text);
   text-decoration: none;
   color: #000000;
-  margin: 0px 40px 0px;
+  padding: 24px 93px 25px 215px;
 }
 
 .blue {
@@ -52,9 +56,9 @@ body {
 
 .topnav {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
-  padding: 20px;
+
 }
 
 .navbar ul {
@@ -65,6 +69,8 @@ body {
   width: 405px;
   list-style-type: none;
   justify-content: space-between;
+  margin: 32px;
+  margin-left: 0;
 }
 
 .navbar a {
@@ -86,11 +92,18 @@ body {
   color: red;
 }
 
+.navcontact li {
+  display: inline;
+  justify-content:space-between;
+  padding: 32px;
+  line-height: 16.41px;
+  list-style-type: none;
+ 
+}
+
 .navcontact {
-  display: flex;
-  width: 25%;
-  justify-content: space-between;
-  align-items: center;
+  padding: 32px 225px;
+  margin: 0;
 }
 
 .navcontact a {
@@ -137,8 +150,8 @@ body {
   background-color: var(--link-color-hover);
   padding: 10px 20px;
   color: #ffffff;
-  font-family: var(--head-text)
-  text-transform: uppercase;
+  font-family: var(--head-text);
+  text-transform:uppercase;
   font-size: 16px;
   letter-spacing: 0.96px;
   font-weight: 700;
@@ -178,7 +191,6 @@ body {
   background-color: #ffffff;
   width: 100%;;
   text-align: center;
-  display: flexbox;
   margin: 0;
 }
 
@@ -224,15 +236,11 @@ body {
 }
 
 .ourteam-container {
-  display: block;
-  padding: 0px 215px;
-  
+  display: block; 
+  margin: 0;
 }
 
-.ourteam-container div h2 {
-  margin: auto;
-  padding: 94px 0 50px 0;
-}
+
 
 .ourteam {
   background-color: #ffffff;
@@ -258,6 +266,7 @@ body {
   margin: 0;
   gap: 30px;
 }
+
 .footer {
   background-color: #2f303a;
   width: 100%;
@@ -267,13 +276,12 @@ body {
 .logo-text-footer a {
   width: 145px;
   height: 31px;
-  top: 24px;
-  left: 215px;
+  line-height: 30.52px;
   padding: 1px;
   font-size: 24px;
   font-family: var(--logo-text);
   text-decoration: none;
-  color: #000000;
+  color:#FFFFFF;
 }
 
 .footeradress {
@@ -298,23 +306,21 @@ body {
 
 .footerlogoadress {
   display: inline-block;
-  margin: 50px 150px;
+  padding: 60px 215px;
   
 }
 
 /* Portofolio style*/
 
-.productscontainer {
-  top: 174px;
-  left: 215px;
-  border: 1px;
+.container {
   padding: 94px 215px;
   justify-content: center;
-  display:flexbox;
+  display:block;  
 }
 
-.productscontainer ul {
+.container ul {
   margin: auto;
+  padding: 0;
 }
 
 .products {
@@ -322,17 +328,17 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
+  max-width: 1200px;
+  margin: 0;
 }
 
 
 .productsimg {
-  border: 1px solid #EEEEEE;
   list-style-type: none;
-  height: auto;
-  justify-content: center;
-  display: flexbox;
   height: 404px;
-  width: 370px;
+  justify-content: center;
+  display: block;
+  max-width: 370px;
   flex-basis: calc((100% - 90px)/3);
 }
 
@@ -341,12 +347,28 @@ body {
   height: 294px;
   top: 262px;
   left: 215px;
-
+  vertical-align: middle;
 }
 
-.products .productsimg div {
-  margin: 20px 24px;
+.productsimg div {
+  border: 1px solid #EEEEEE;
+  border-top: 0;
+  padding: 1px;
  }
+
+.productsimg div h3,
+.productsimg div p {
+  padding: 0 24px;
+}
+
+.productsimg div p {
+  padding: 0 24px;
+  color: #757575;
+}
+
+.productnav {
+  margin-bottom: 50px;
+}
 
 .buttonproduct {
   width: 516px;
