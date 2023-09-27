@@ -25,7 +25,6 @@ body {
   color: #000000;
   margin: 0;
 }
-
 section {
   padding: 94px;
 }
@@ -171,10 +170,12 @@ section {
 
 
 .aboutus {
-  padding: 94px;
+  padding: 94px 215px;
   display: flex;
-  width: 1200px;
+  width: 100#;
   margin: auto;
+  justify-content: center;
+ 
 
 }
 
@@ -182,8 +183,23 @@ section {
   float: left;
   width: 270px;
   height: 75px;
-  margin: 0 30px;
+  margin: 0 15px;
   text-align: justify;
+  align-items: center;
+}
+
+.column h4 {
+  margin: 10;
+}
+.column p {
+font-family: var(--head-text);
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.03em;
+text-align: left;
+color: #757575;
+margin: 0;
 }
 
 .middle-main {
@@ -198,10 +214,7 @@ section {
   margin: auto;
   
 }
-.whatwedo {
-  padding: 94px 215px;
 
-}
 
 .whatwedo-container .whatwedoimg {
   width: 1200px;
