@@ -3,6 +3,8 @@ html {
   --logo-text: "raleway", sans-serif;
   --head-text: "roboto", sans-serif;
   --link-color-hover: #2196f3;
+  --text-heading-color: #212121;
+
 }
 
 /* homepage style*/
@@ -352,6 +354,10 @@ margin: 0;
   display: block;
   max-width: 370px;
   flex-basis: calc((100% - 90px)/3);
+  box-shadow: 1px 4px 6px 0px #00000029,
+   0px 4px 4px 0px #0000000F,
+   0px 1px 1px 0px #0000001F;
+
 }
 
 .productsimg img {
@@ -363,20 +369,37 @@ margin: 0;
 }
 
 .productsimg div {
-  border: 1px solid #EEEEEE;
-  border-top: 0;
-  padding: 1px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.productsimg > div h3 {
+  font-family: var(--head-text);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--text-heading-color);
+  margin: 20px 24px;
+  margin-bottom: 4px;
+}
+
+
+.productsimg > div p {
+  font-family: var(--head-text);
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 30px;
+ letter-spacing: 0.03em;
+ text-align: left;
+ color: #757575;
+ margin: 20px 24px;
+ margin-top: 0;
  }
 
-.productsimg div h3,
-.productsimg div p {
-  padding: 0 24px;
-}
 
-.productsimg div p {
-  padding: 0 24px;
-  color: #757575;
-}
 
 .productnav {
   margin-bottom: 50px;
@@ -429,5 +452,8 @@ li .button:hover {
 }
 
 
-
+.icon {
+  height: 12px;
+  width: 16px;
+}
  
