@@ -36,33 +36,35 @@
             </ul>
           </nav>
 
-          <ul class="navcontact">
-            <li><svg class="icon"> <use href="./symbol-defs.svg#icon-envelope-hover"></use> </svg></li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-            <li><a href="tel:+1212-772-4150"> +1 212-772-4150</a></li>
-          </ul>
+          <div class="navcontact">
+              <span><svg class="icon iconenvelope">
+                  <use href="./symbol-defs.svg#icon-envelope"></use></svg>
+                <a href="mailto:info@devstudio.com">info@devstudio.com </a></span>
+              <span> <svg class="icon iconphone">
+                  <use href="./symbol-defs.svg#icon-smartphone"></use></svg>
+                <a href="tel:+1212-772-4150"> +1 212-772-4150</a></span>
+            
         </div>
       </div>
     </header>
 
     <main>
       <!-- Top main request button-->
-      <section class="head-main">
-        <div class="headmain-container">
-          <div class="solutions">
-            <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
+      <section class="headmain"> 
+        <div class="buttonservice">
+          <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
+            <button class="btnservice" type="button">  Request our services </button>
           </div>
-          <div class="buttonservice">
-            <button class="btnservice" type="button">
-              Request our services
-            </button>
-          </div>
-        </div>
       </section>
+      
       <!--About services-->
-      <section class="middle-main container">
+      <section class="middlemain container">
+        
         <div class="aboutus">
           <div class="column">
+            <svg class="abouticon">
+              <use href="./symbol-defs.svg#icon-antenna-1"></use>
+            </svg>
             <h4>ATTENTION TO DETAILS</h4>
             <p>
               We go into all the details and processes of your business to
@@ -70,6 +72,9 @@
             </p>
           </div>
           <div class="column">
+            <svg class="abouticon">
+              <use href="./symbol-defs.svg#icon-clock-1"></use>
+            </svg>
             <h4>PUNCTUALITY</h4>
             <p>
               With us, you can feel safe and secure. An important principle of
@@ -77,6 +82,9 @@
             </p>
           </div>
           <div class="column">
+            <svg class="abouticon">
+              <use href="./symbol-defs.svg#icon-diagram-1"></use>
+            </svg>
             <h4>PLANNING</h4>
             <p>
               You will be able to observe and participate in every phase of
@@ -84,42 +92,60 @@
             </p>
           </div>
           <div class="column">
+            <svg class="abouticon">
+              <use href="./symbol-defs.svg#icon-astronaut-1"></use>
+            </svg>
             <h4>MODERN TECHNOLOGIES</h4>
             <p>
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
             </p>
           </div>
-        </div> 
-        <!--What we do in images-->
-        <div class="whatwedo-container">
-          <div class="whatwedo container">
-            <div><h2>What we do</h2></div>
+        </div>
+      </section>
 
+       <!--What we do in images-->
+      <section class="whatwedo container">
+        
+          <div class="whatwedo-container">
+            <h2>What we do</h2>
+            
             <ul class="whatwedoimg">
               <li><img src="images/tst.jpg" alt="writing at keyboard" /></li>
-              <li>
-                <img
+              <li><img
                   src="images/mobiletst.jpg"
-                  alt="women with mobile in her hand"
-                />
-              </li>
+                  alt="women with mobile in her hand"/></li>
               <li><img src="images/tablet.jpg" alt="Grafic tablet" /></li>
             </ul>
           </div>
-        </div>
+        
       </section>
-     <!-- Out team -->
-      <section class="footer-main">
-        <div class="ourteam-container">
-          <div><h2>Our Team</h2></div>
 
+      <!-- Our team -->
+      <section class="ourteam-container container">
+        
+        <div class="team">
+          <h2>Our Team</h2>
+      
           <ul class="footer-main-img">
             <li class="ourteam">
               <img src="images/christopherwalker.jpg" alt="men foto" />
               <div>
                 <h4>Christopher Walker</h4>
                 <p>Product Designer</p>
+                <div class="socialbuttons">
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></div>
               </div>
             </li>
             <li class="ourteam">
@@ -127,6 +153,19 @@
               <div>
                 <h4>Kylie Evans</h4>
                 <p>Frontend Developer</p>
+                <div class="socialbuttons">
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></div>
               </div>
             </li>
             <li class="ourteam">
@@ -134,6 +173,19 @@
               <div>
                 <h4>Ryan Harris</h4>
                 <p>Marketing</p>
+                <div class="socialbuttons">
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></div>
               </div>
             </li>
             <li class="ourteam">
@@ -141,12 +193,50 @@
               <div>
                 <h4>Tyler Moore</h4>
                 <p>Ui Designer</p>
+                <div class="socialbuttons">
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                  <svg class="socialbuttonlink">
+                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></div>
               </div>
             </li>
           </ul>
         </div>
       </section>
+
+      <section class="regular-container container">
+        <div><h2>Regular Customers</h2></div>
+        <div class="regular-customers">
+          <svg class="regularcustomersicon">
+            <use href="./symbol-defs.svg#icon-yaco-Logo"></use>
+          </svg>
+          <svg class="regularcustomersicon">
+            <use href="./symbol-defs.svg#icon-company-Logo"></use>
+          </svg>
+          <svg class="regularcustomersicon">
+            <use href="./symbol-defs.svg#icon-companyleaf-Logo"></use>
+          </svg>
+          <svg class="regularcustomersicon">
+            <use href="./symbol-defs.svg#icon-point-Logo"></use>
+          </svg>
+          <svg class="regularcustomersicon">
+            <use href="./symbol-defs.svg#icon-brand-Logo"></use>
+          </svg>
+          <svg class="regularcustomersicon">
+            <use href="./symbol-defs.svg#icon-company-tagline"></use>
+          </svg>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <div class="footerlogoadress">
         <div class="logo-text-footer">
@@ -159,6 +249,22 @@
             <a href="tel:+1212-772-4150">+1 212-772-4150</a>
           </address>
         </div>
+      </div>
+      <div class="socialfind">
+        <h4>FIND US ON</h4>
+        <div class="socialbuttons">
+        <svg class="socialbuttonlink">
+          <use href="./symbol-defs.svg#icon-instagram-2"></use>
+        </svg>
+        <svg class="socialbuttonlink">
+          <use href="./symbol-defs.svg#icon-twitter-1"></use>
+        </svg>
+        <svg class="socialbuttonlink">
+          <use href="./symbol-defs.svg#icon-facebook-1"></use>
+        </svg>
+        <svg class="socialbuttonlink">
+          <use href="./symbol-defs.svg#icon-linkedin-1"></use>
+        </svg></div>
       </div>
     </footer>
   </body>
