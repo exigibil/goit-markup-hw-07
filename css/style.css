@@ -71,14 +71,23 @@ body {
   margin-left: 0;
 }
 
+.navbar li {
+margin: 0;
+width: 100%;
+height: 2rem;
+}
+
+
 .navbar a {
   text-decoration: none;
   color: black;
   font-weight: 500;
 }
 
+
 .navbar .currentweb {
   color: var(--link-color-hover);
+  fill: var(--link-color-hover);
 }
 
 .navbar a:hover,
@@ -112,20 +121,25 @@ body {
   display: flex;
 }
 
+
 .navcontact a:focus,
-.navcontact a:hover {
+.navcontact a:hover,
+.regularcustomersicon:hover {
   color: var(--link-color-hover);
-}
-.navcontact .icon:hover {
-  fill: #2196f3;
+  fill: var(--link-color-hover);
 }
 
+
 .headmain {
-  background-image: url(/images/mainsolutionimgbg.png);
+  background-image:  linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url('/images/mainsolutionimgbg.png');
+  background-position: center;
+  background-size:cover;
+  object-fit: contain;
   background-repeat: no-repeat;
   width: 100%;
   text-align: center;
-  color: var(--text-white-color);
+  
 }
 
 .headmain h1 {
@@ -136,6 +150,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .buttonservice {
@@ -143,6 +159,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 200px;
 }
 
 .btnservice {
@@ -157,15 +174,12 @@ body {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--link-color-hover);
+  border: 1px var(--link-color-hover);
 }
 
-.btnservice:hover {
-  border: 2px solid var(--link-color-hover);
-}
 
 .btnservice:focus {
-  border: 2px solid var(--link-color-hover);
+  border: 1px solid var(--link-color-hover);
 }
 
 .aboutus {
@@ -354,22 +368,21 @@ body {
   padding-top: 20px;
 }
 
-.socialbuttons svg {
-  width: 20px;
-  height: 20px;
-  fill: #000000;
-  stroke: #000000;
+
+.ourteam .socialbuttonlink {
+   fill:#2f303a;
+    width: 44x;
+    height: 44px;
+ 
 }
 
 .socialbuttonlink {
-  height: 44px;
-  width: 44px;
   fill: var(--text-white-color);
+  height: 44px;
+  width: 44Px;
+  
 }
 
-.socialbuttons svg:hover {
-  fill: var(--link-color-hover);
-}
 
 /* Portofolio style*/
 
