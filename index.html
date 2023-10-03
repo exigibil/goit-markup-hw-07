@@ -22,11 +22,10 @@
   <body>
     <!--Navigation bar-->
     <header>
-      <div class="nav-container">
+      <div class="nav-container ">
         <div class="logo-text">
           <a href="index.html"><span class="blue">Web</span>Studio</a>
         </div>
-
         <div class="topnav">
           <nav class="navbar">
             <ul>
@@ -39,21 +38,21 @@
           <div class="navcontact">
               
             <a href="mailto:info@devstudio.com"> <span><svg class="icon iconenvelope">
-                  <use href="./symbol-defs.svg#icon-envelope"></use></svg> info@devstudio.com </span></a>
+                  <use href="./images/icons.svg#icon-envelope"></use></svg> info@devstudio.com </span></a>
               
             <a href="tel:+1212-772-4150"> <span> <svg class="icon iconphone">
-                  <use href="./symbol-defs.svg#icon-smartphone"></use></svg>+1 212-772-4150 </span></a>
-            
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+1 212-772-4150 </span></a>
         </div>
+        
       </div>
     </header>
 
     <main>
       <!-- Top main request button-->
-      <section class="headmain"> 
-        <div class="buttonservice">
+      <section class="headmain container"> 
+        <div class="topservices">
           <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
-            <button class="btnservice" type="button">  Request our services </button>
+            <div class="button-container"><button class="btnservice" type="button">  Request our services </button></div>
           </div>
       </section>
       
@@ -62,9 +61,9 @@
         
         <div class="aboutus">
           <div class="column">
-            <svg class="abouticon">
-              <use href="./symbol-defs.svg#icon-antenna-1"></use>
-            </svg>
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-antenna-1"></use>
+            </svg></div>
             <h4>ATTENTION TO DETAILS</h4>
             <p>
               We go into all the details and processes of your business to
@@ -72,9 +71,9 @@
             </p>
           </div>
           <div class="column">
-            <svg class="abouticon">
-              <use href="./symbol-defs.svg#icon-clock-1"></use>
-            </svg>
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-clock-1"></use>
+            </svg></div>
             <h4>PUNCTUALITY</h4>
             <p>
               With us, you can feel safe and secure. An important principle of
@@ -82,9 +81,9 @@
             </p>
           </div>
           <div class="column">
-            <svg class="abouticon">
-              <use href="./symbol-defs.svg#icon-diagram-1"></use>
-            </svg>
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-diagram-1"></use>
+            </svg></div>
             <h4>PLANNING</h4>
             <p>
               You will be able to observe and participate in every phase of
@@ -92,9 +91,9 @@
             </p>
           </div>
           <div class="column">
-            <svg class="abouticon">
-              <use href="./symbol-defs.svg#icon-astronaut-1"></use>
-            </svg>
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-astronaut-1"></use>
+            </svg></div>
             <h4>MODERN TECHNOLOGIES</h4>
             <p>
               We use innovative tools to solve assigned tasks. It's time to
@@ -102,21 +101,21 @@
             </p>
           </div>
         </div>
-      </section>
+      
 
        <!--What we do in images-->
-      <section class="whatwedo container">
+      
         
-          <div class="whatwedo-container">
-            <h2>What we do</h2>
+          <div class="whatwedo-container container">
             
-            <ul class="whatwedoimg">
-              <li><img src="images/tst.jpg" alt="writing at keyboard" /></li>
-              <li><img
-                  src="images/mobiletst.jpg"
-                  alt="women with mobile in her hand"/></li>
-              <li><img src="images/tablet.jpg" alt="Grafic tablet" /></li>
-            </ul>
+            <div><h2>What we do</h2></div>
+        
+            <div class="whatwedoimglist">
+              <div><img src="images/tst.jpg" alt="writing at keyboard" /></div>
+              <div><img src="images/mobiletst.jpg" alt="women with mobile in her hand"/></div>
+              <div><img src="images/tablet.jpg" alt="Grafic tablet" /></div>
+            </div>
+            
           </div>
         
       </section>
@@ -129,83 +128,85 @@
       
           <ul class="footer-main-img">
             <li class="ourteam">
-              <img src="images/christopherwalker.jpg" alt="men foto" />
-              <div>
-                <h4>Christopher Walker</h4>
-                <p>Product Designer</p>
-                <div class="socialbuttons">
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
-                  </svg></div>
+              <div> 
+                <img src="images/christopherwalker.jpg" alt="men foto" />
+                <div><h4>Christopher Walker</h4>
+                  <p>Product Designer</p>
+                </div>
+                <div class="socialbuttons-container">
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg></a>
+                </div>
               </div>
             </li>
             <li class="ourteam">
-              <img src="images/kylieevans.jpg" alt="woman foto" />
               <div>
-                <h4>Kylie Evans</h4>
-                <p>Frontend Developer</p>
-                <div class="socialbuttons">
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
-                  </svg></div>
-              </div>
+                <img src="images/kylieevans.jpg" alt="woman foto" />
+                <div><h4>Kylie Evans</h4>
+                  <p>Frontend Developer</p></div>
+                  <div class="socialbuttons-container">
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg></a></div>
+                </div>
             </li>
             <li class="ourteam">
-              <img src="images/ryanharris.jpg" alt="men foto" />
               <div>
-                <h4>Ryan Harris</h4>
-                <p>Marketing</p>
-                <div class="socialbuttons">
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
-                  </svg></div>
-              </div>
+                <img src="images/ryanharris.jpg" alt="men foto" />
+                <div><h4>Ryan Harris</h4>
+                  <p>Marketing</p></div>
+                  <div class="socialbuttons-container">
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg></a></div>
+                </div>
             </li>
             <li class="ourteam">
-              <img src="images/tylermoore.jpg" alt="men foto" />
               <div>
-                <h4>Tyler Moore</h4>
-                <p>Ui Designer</p>
-                <div class="socialbuttons">
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-instagram-2"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-twitter-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-facebook-1"></use>
-                  </svg>
-                  <svg class="socialbuttonlink">
-                    <use href="./symbol-defs.svg#icon-linkedin-1"></use>
-                  </svg></div>
+                <img src="images/tylermoore.jpg" alt="men foto" />
+               <div><h4>Tyler Moore</h4>
+                <p>Ui Designer</p></div>
+                <div class="socialbuttons-container">
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg></a></div>
               </div>
             </li>
           </ul>
@@ -215,24 +216,24 @@
       <section class="regular-container container">
         <div><h2>Regular Customers</h2></div>
         <div class="regular-customers">
-          <svg class="regularcustomersicon">
-            <use href="./symbol-defs.svg#icon-yaco-Logo"></use>
-          </svg>
-          <svg class="regularcustomersicon">
-            <use href="./symbol-defs.svg#icon-company-Logo"></use>
-          </svg>
-          <svg class="regularcustomersicon">
-            <use href="./symbol-defs.svg#icon-companyleaf-Logo"></use>
-          </svg>
-          <svg class="regularcustomersicon">
-            <use href="./symbol-defs.svg#icon-point-Logo"></use>
-          </svg>
-          <svg class="regularcustomersicon">
-            <use href="./symbol-defs.svg#icon-brand-Logo"></use>
-          </svg>
-          <svg class="regularcustomersicon">
-            <use href="./symbol-defs.svg#icon-company-tagline"></use>
-          </svg>
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-yaco-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-company-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-companyleaf-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-point-Logo"></use>
+          </svg></div> 
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-brand-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"> <svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-company-tagline"></use>
+          </svg></div>
         </div>
       </section>
     </main>
@@ -252,20 +253,23 @@
       </div>
       <div class="socialfind">
         <h4>FIND US ON</h4>
-        <div class="socialbuttons">
-        <svg class="socialbuttonlink">
-          <use href="./symbol-defs.svg#icon-instaEllipse"></use>
-        </svg>
-        <svg class="socialbuttonlink">
-          <use href="./symbol-defs.svg#icon-twiterEllipse-1"></use>
-        </svg>
-        <svg class="socialbuttonlink">
-          <use href="./symbol-defs.svg#icon-facebookEllipse-2"></use>
-        </svg>
-        <svg class="socialbuttonlink">
-          <use href="./symbol-defs.svg#icon-linkedinEllipse-3"></use>
-        </svg></div>
+        <div class="socialbuttons-container">
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-twitter-1"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-facebook-1"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-linkedin-1"></use>
+          </svg></a></div>
       </div>
     </footer>
   </body>
 </html>
+
+
+
