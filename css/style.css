@@ -140,7 +140,7 @@ height: 1rem;
 
 .headmain {
   background-image:  linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url("/images/mainsolutionimgbg.png");
+  url('../images/mainsolutionimgbg.png');
   background-position:center;
   background-size:cover;
   object-fit:cover;
