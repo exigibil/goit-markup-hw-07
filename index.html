@@ -15,51 +15,55 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!--Navigation bar-->
     <header>
-      <div class="nav-container">
+      <div class="nav-container ">
         <div class="logo-text">
           <a href="index.html"><span class="blue">Web</span>Studio</a>
         </div>
-
         <div class="topnav">
           <nav class="navbar">
             <ul>
-              <li><a href="index.html" class="currentweb">Studio</a></li>
+              <li><a href="index.html" class="currentweb"> <span>Studio<svg><use href="/symbol-defs.svg#icon-hover"></svg></span></a></li>
               <li><a href="portofolio.html">Portofolio</a></li>
               <li><a href="contact.html">Contacts</a></li>
             </ul>
           </nav>
 
-          <ul class="navcontact">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-            <li><a href="tel:+1212-772-4150"> +1 212-772-4150</a></li>
-          </ul>
+          <div class="navcontact">
+              
+            <a href="mailto:info@devstudio.com"> <span><svg class="icon iconenvelope">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg> info@devstudio.com </span></a>
+              
+            <a href="tel:+1212-772-4150"> <span> <svg class="icon iconphone">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+1 212-772-4150 </span></a>
         </div>
+        
       </div>
     </header>
 
     <main>
-      <section class="head-main">
-        <div class="headmain-container">
-          <div class="solutions">
-            <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
+      <!-- Top main request button-->
+      <section class="headmain container"> 
+        <div class="topservices">
+          <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
+            <div class="button-container"><button class="btnservice" type="button">  Request our services </button></div>
           </div>
-          <div class="buttonservice">
-            <button class="btnservice" type="button">
-              Request our services
-            </button>
-          </div>
-        </div>
       </section>
-
-      <section class="middle-main">
+      
+      <!--About services-->
+      <section class="middlemain container">
+        
         <div class="aboutus">
           <div class="column">
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-antenna-1"></use>
+            </svg></div>
             <h4>ATTENTION TO DETAILS</h4>
             <p>
               We go into all the details and processes of your business to
@@ -67,13 +71,19 @@
             </p>
           </div>
           <div class="column">
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-clock-1"></use>
+            </svg></div>
             <h4>PUNCTUALITY</h4>
             <p>
               With us, you can feel safe and secure. An important principle of
-              the company:respect your time and deadlines.
+              the company: respect your time and deadlines.
             </p>
           </div>
           <div class="column">
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-diagram-1"></use>
+            </svg></div>
             <h4>PLANNING</h4>
             <p>
               You will be able to observe and participate in every phase of
@@ -81,6 +91,9 @@
             </p>
           </div>
           <div class="column">
+            <div class="aboutusicons"><svg class="abouticon">
+              <use href="./images/icons.svg#icon-astronaut-1"></use>
+            </svg></div>
             <h4>MODERN TECHNOLOGIES</h4>
             <p>
               We use innovative tools to solve assigned tasks. It's time to
@@ -88,62 +101,143 @@
             </p>
           </div>
         </div>
+      
 
-        <div class="whatwedo-container">
-          <div class="whatwedo">
+       <!--What we do in images-->
+      
+        
+          <div class="whatwedo-container container">
+            
             <div><h2>What we do</h2></div>
-
-            <ul class="whatwedoimg">
-              <li><img src="images/tst.jpg" alt="writing at keyboard" /></li>
-              <li>
-                <img
-                  src="images/mobiletst.jpg"
-                  alt="women with mobile in her hand"
-                />
-              </li>
-              <li><img src="images/tablet.jpg" alt="Grafic tablet" /></li>
-            </ul>
+        
+            <div class="whatwedoimglist">
+              <div><img src="images/tst.jpg" alt="writing at keyboard" /></div>
+              <div><img src="images/mobiletst.jpg" alt="women with mobile in her hand"/></div>
+              <div><img src="images/tablet.jpg" alt="Grafic tablet" /></div>
+            </div>
+            
           </div>
-        </div>
+        
       </section>
 
-      <section class="footer-main">
-        <div class="ourteam-container">
-          <div><h2>Our Team</h2></div>
-
+      <!-- Our team -->
+      <section class="ourteam-container container">
+        
+        <div class="team">
+          <h2>Our Team</h2>
+      
           <ul class="footer-main-img">
             <li class="ourteam">
-              <img src="images/christopherwalker.jpg" alt="men foto" />
-              <div>
-                <h4>Christopher Walker</h4>
-                <p>Product Designer</p>
+              <div> 
+                <img src="images/christopherwalker.jpg" alt="men foto" />
+                <div><h4>Christopher Walker</h4>
+                  <p>Product Designer</p>
+                </div>
+                <div class="socialbuttons-container">
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg></a>
+                </div>
               </div>
             </li>
             <li class="ourteam">
-              <img src="images/kylieevans.jpg" alt="woman foto" />
               <div>
-                <h4>Kylie Evans</h4>
-                <p>Frontend Developer</p>
-              </div>
+                <img src="images/kylieevans.jpg" alt="woman foto" />
+                <div><h4>Kylie Evans</h4>
+                  <p>Frontend Developer</p></div>
+                  <div class="socialbuttons-container">
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg></a></div>
+                </div>
             </li>
             <li class="ourteam">
-              <img src="images/ryanharris.jpg" alt="men foto" />
               <div>
-                <h4>Ryan Harris</h4>
-                <p>Marketing</p>
-              </div>
+                <img src="images/ryanharris.jpg" alt="men foto" />
+                <div><h4>Ryan Harris</h4>
+                  <p>Marketing</p></div>
+                  <div class="socialbuttons-container">
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg></a>
+                    <a class="socialbuttonlink"><svg>
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg></a></div>
+                </div>
             </li>
             <li class="ourteam">
-              <img src="images/tylermoore.jpg" alt="men foto" />
               <div>
-                <h4>Tyler Moore</h4>
-                <p>Ui Designer</p>
+                <img src="images/tylermoore.jpg" alt="men foto" />
+               <div><h4>Tyler Moore</h4>
+                <p>Ui Designer</p></div>
+                <div class="socialbuttons-container">
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg></a>
+                  <a class="socialbuttonlink"><svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg></a></div>
               </div>
             </li>
           </ul>
         </div>
       </section>
+
+      <section class="regular-container container">
+        <div><h2>Regular Customers</h2></div>
+        <div class="regular-customers">
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-yaco-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-company-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-companyleaf-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-point-Logo"></use>
+          </svg></div> 
+          <div class="regular-customers-buttons"><svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-brand-Logo"></use>
+          </svg></div>
+          <div class="regular-customers-buttons"> <svg class="regularcustomersicon">
+            <use href="./images/icons.svg#icon-company-tagline"></use>
+          </svg></div>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <div class="footerlogoadress">
         <div class="logo-text-footer">
@@ -157,6 +251,25 @@
           </address>
         </div>
       </div>
+      <div class="socialfind">
+        <h4>FIND US ON</h4>
+        <div class="socialbuttons-container">
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-twitter-1"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-facebook-1"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-linkedin-1"></use>
+          </svg></a></div>
+      </div>
     </footer>
   </body>
 </html>
+
+
+

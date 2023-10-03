@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -31,16 +31,20 @@
         <div class="topnav">
           <nav class="navbar">
             <ul>
-              <li><a href="index.html">Studio</a></li>
+              <li><a href="index.html" class="currentweb"> <span>Studio<svg><use href="/symbol-defs.svg#icon-hover"></svg></span></a></li>
               <li><a href="portofolio.html">Portofolio</a></li>
-              <li><a href="contact.html" class="currentweb">Contacts</a></li>
+              <li><a href="contact.html">Contacts</a></li>
             </ul>
           </nav>
 
-          <ul class="navcontact">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-            <li><a href="tel:+1212-772-4150"> +1 212-772-4150</a></li>
-          </ul>
+          <div class="navcontact">
+              
+            <a href="mailto:info@devstudio.com"> <span><svg class="icon iconenvelope">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg> info@devstudio.com </span></a>
+              
+            <a href="tel:+1212-772-4150"> <span> <svg class="icon iconphone">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+1 212-772-4150 </span></a>
+            
         </div>
       </div>
     </header>
@@ -57,6 +61,22 @@
             <a href="tel:+1212-772-4150">+1 212-772-4150</a>
           </address>
         </div>
+      </div>
+      <div class="socialfind">
+        <h4>FIND US ON</h4>
+        <div class="socialbuttons-container">
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-instagram-2"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-twitter-1"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-facebook-1"></use>
+          </svg></a>
+          <a class="socialbuttonlink"><svg>
+            <use href="./images/icons.svg#icon-linkedin-1"></use>
+          </svg></a></div>
       </div>
     </footer>
   </body>
