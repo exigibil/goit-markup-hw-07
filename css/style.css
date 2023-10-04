@@ -269,11 +269,13 @@ body {
 
 .ourteam {
   display: flex;
-  background-color: #ffffff;
+  background-color:rgba(255, 255, 255, 1);
   width: 270px;
-  box-shadow: 0px 2px 0px grey;
-  -webkit-box-shadow: 0px 2px 20px grey;
   justify-content: center;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .ourteam div div {
@@ -458,8 +460,8 @@ body {
   display: block;
   max-width: 370px;
   flex-basis: calc((100% - 90px) / 3);
-  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
-    0px 1px 1px 0px #0000001f;
+  border: 1px solid rgba(238, 238, 238, 1);
+  cursor: pointer;
 }
 
 .productsimg img {
@@ -539,10 +541,18 @@ li .button:focus,
 li .button:hover {
   background-color: var(--link-color-hover);
   color: var(--text-white-color);
-  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.buttonproduct a:active,
+.productsimg:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.buttonproduct:active,
 .currentweb:focus {
   color: var(--link-color-hover);
 }
