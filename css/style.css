@@ -27,22 +27,18 @@ body {
   margin: 0;
 }
 
-
-
 .nav-container {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #ececec;
   width: 100%;
   align-items: center;
- justify-content: space-between;
-
+  justify-content: space-between;
 }
 
 .logo-text {
   margin: 24px 93px 25px 215px;
 }
-
 
 .logo-text a {
   width: 145px;
@@ -56,33 +52,35 @@ body {
   text-align: center;
 }
 
-
 .blue {
-  color: #2196f3;
+  color: var(--link-color-hover);
+}
+
+.navbar {
+display: flex;
+justify-content: space-around;
+margin-top: 32px;
 }
 
 .topnav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  
 }
 
 .navbar ul {
   background-color: #ffffff;
-  overflow: hidden;
   line-height: 16.41px;
-  display: flex;
   width: 100%;
   list-style-type: none;
-  justify-content: space-between;
-  margin: 32px;
-  margin-left: 0;
+  display: flex;
+  gap: 50px;
 }
 
-.navbar li {
-margin: 0;
-width: 100%;
-height: 1rem;
+.navbar .currentweb {
+border-bottom: 2px solid var(--link-color-hover);
+
 }
 
 
@@ -90,6 +88,7 @@ height: 1rem;
   text-decoration: none;
   color: black;
   font-weight: 500;
+  
 }
 
 
@@ -97,6 +96,12 @@ height: 1rem;
   color: var(--link-color-hover);
   fill: var(--link-color-hover);
 }
+
+.navbar .currentweb svg {
+fill: var(--link-color-hover);
+}
+
+
 
 .navbar a:hover,
 .navbar a:focus {
@@ -113,6 +118,7 @@ height: 1rem;
   justify-content: space-evenly;
   align-items: center;
   width: 35%;
+  margin: 32px;
 }
 
 .navcontact span {
@@ -129,7 +135,6 @@ height: 1rem;
   display: flex;
 }
 
-
 .navcontact a:focus,
 .navcontact a:hover,
 .regularcustomersicon:hover {
@@ -137,16 +142,18 @@ height: 1rem;
   fill: var(--link-color-hover);
 }
 
-
 .headmain {
-  background-image:  linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url('../images/mainsolutionimgbg.png');
-  background-position:center;
-  background-size:cover;
-  object-fit:cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/mainsolutionimgbg.png");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
   text-align: center;
-  
 }
 
 .headmain h1 {
@@ -158,7 +165,6 @@ height: 1rem;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  
 }
 
 .topservices {
@@ -187,7 +193,6 @@ height: 1rem;
   border: 1px var(--link-color-hover);
 }
 
-
 .btnservice:focus {
   border: 1px solid var(--link-color-hover);
 }
@@ -205,10 +210,10 @@ height: 1rem;
 }
 
 .aboutusicons {
-width: 100%;
-border-radius: 4px;
-background-color: rgba(245, 244, 250, 1);
-margin-bottom: 30px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
 }
 
 .column {
@@ -244,13 +249,11 @@ margin-bottom: 30px;
 
 .whatwedoimglist {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 30px;
-
 }
-
 
 .whatwedoimglist img {
   max-width: 370px;
@@ -258,7 +261,7 @@ margin-bottom: 30px;
 }
 
 .ourteam-container {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -280,7 +283,7 @@ margin-bottom: 30px;
   justify-content: center;
 }
 
-.ourteam div div  {
+.ourteam div div {
   margin: 30px 43px;
   margin-bottom: 16px;
 }
@@ -299,8 +302,6 @@ margin-bottom: 30px;
   align-items: center;
   padding: 12px;
 }
-
-
 
 .ourteam .socialbuttons-container {
   margin: 0;
@@ -413,10 +414,9 @@ margin-bottom: 30px;
 .socialbuttons-container a {
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  justify-content:center;
-  border-radius: 30px;
-  }
-  
+  justify-content: center;
+  border-radius: 50px;
+}
 
 .socialbuttons-container {
   display: flex;
@@ -428,13 +428,9 @@ margin-bottom: 30px;
   padding-top: 20px;
 }
 
-
-
-
 .socialbuttonlink {
   fill: var(--text-white-color);
 }
-
 
 /* Portofolio style*/
 
@@ -558,14 +554,13 @@ li .button:hover {
 }
 
 .regular-container div h2 {
-font-family: var(--head-text);
-font-size: 36px;
-font-weight: 700;
-line-height: 42px;
-letter-spacing: 0.03em;
-text-align: center;
-color: rgba(33, 33, 33, 1);
-
+  font-family: var(--head-text);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(33, 33, 33, 1);
 }
 
 .regularcustomersicon {
@@ -576,7 +571,4 @@ color: rgba(33, 33, 33, 1);
 .regular-customers-buttons {
   border: 1px solid rgba(175, 177, 184, 1);
   margin-left: 30px;
-
-
 }
-
