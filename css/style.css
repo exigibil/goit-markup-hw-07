@@ -57,16 +57,15 @@ body {
 }
 
 .navbar {
-display: flex;
-justify-content: space-around;
-margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
 }
 
 .topnav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  
 }
 
 .navbar ul {
@@ -78,19 +77,15 @@ margin-top: 32px;
   gap: 50px;
 }
 
-.navbar .currentweb {
-border-bottom: 2px solid var(--link-color-hover);
-
-}
-
-
 .navbar a {
   text-decoration: none;
   color: black;
   font-weight: 500;
-  
 }
 
+.navbar .currentweblist {
+  border-bottom: 3px solid var(--link-color-hover);
+}
 
 .navbar .currentweb {
   color: var(--link-color-hover);
@@ -98,10 +93,8 @@ border-bottom: 2px solid var(--link-color-hover);
 }
 
 .navbar .currentweb svg {
-fill: var(--link-color-hover);
+  fill: var(--link-color-hover);
 }
-
-
 
 .navbar a:hover,
 .navbar a:focus {
