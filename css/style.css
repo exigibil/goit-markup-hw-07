@@ -58,7 +58,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 32px;
 }
 
@@ -289,10 +289,11 @@ body {
 .ourteam .socialbuttons-container .socialbuttonlink {
   fill: rgba(175, 177, 184, 1);
   width: 44px;
-  height: 48px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   padding: 12px;
 }
 
