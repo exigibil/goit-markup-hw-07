@@ -52,8 +52,18 @@
       <section class="headmain container"> 
         <div class="topservices">
           <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
-            <div class="button-container"><button class="btnservice" type="button">  Request our services </button></div>
+            <div class="button-container"><button  data-modal-open class="btnservice" type="button">  Request our services </button></div>
           </div>
+
+
+      <!-- Book Service Modal -->
+          <div class="modal is-hidden" data-modal>
+            <div class="modal-content">
+              <div class="btn-close-container"><button class="close-btn" data-modal-close>&times;</button></div>
+              
+            </div>
+          </div>
+
       </section>
       
       <!--About services-->
@@ -269,6 +279,11 @@
       </div>
     </footer>
   </body>
+
+
+
+  <script src="./js/modal.js"></script>
+
 </html>
 
 

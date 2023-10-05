@@ -187,7 +187,45 @@ body {
 }
 
 .btnservice:focus {
-  border: 1px solid var(--link-color-hover);
+  background-color: var(--link-color-hover);
+}
+
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 528px;
+  height: 581px;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+
+.close-btn {
+  color: var(--text-heading-color);
+  border:1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 244px;
+  top: -11px;
+  background-color: #fff;
 }
 
 .aboutus {
@@ -269,7 +307,7 @@ body {
 
 .ourteam {
   display: flex;
-  background-color:rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
   width: 270px;
   justify-content: center;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -464,6 +502,38 @@ body {
   cursor: pointer;
 }
 
+.productsimg .boximage {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+  color: rgba(255, 255, 255, 1);
+}
+.overlay p {
+  color: var(--text-white-color);
+  padding: 63px 24px;
+  margin: 0;
+  font-family: var(--head-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.boximage:hover .overlay {
+  transform: translatey(0);
+}
+
 .productsimg img {
   width: 370px;
   height: 294px;
@@ -489,7 +559,7 @@ body {
   margin-bottom: 4px;
 }
 
-.productsimg > div p {
+.productsimg div + div p {
   font-family: var(--head-text);
   font-size: 16px;
   font-weight: 400;
