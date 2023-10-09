@@ -269,6 +269,19 @@ body {
   margin: 0;
 }
 
+.whatwedoboxtext {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--text-white-color);
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: -78px;
+}
+.whatwedoboxtext p {
+  padding: 27px;
+}
+
+
 .whatwedo-container {
   background-color: #ffffff;
   width: 100%;
