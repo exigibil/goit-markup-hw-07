@@ -665,12 +665,24 @@ li .button:hover {
   color: rgba(33, 33, 33, 1);
 }
 
-.regularcustomersicon {
-  fill: rgba(175, 177, 184, 1);
-  padding: 16px 32px;
-}
 
 .regular-customers-buttons {
   border: 1px solid rgba(175, 177, 184, 1);
-  margin-left: 30px;
+  border-radius: 4px;
+  width: 170px;
+  align-items: center;
+  align-content: center;
+}
+
+.regularcustomersicon {
+  fill: rgba(175, 177, 184, 1);
+  box-sizing: content-box;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+
+.regular-customers {
+  display: flex;
+  gap: 30px;
 }
