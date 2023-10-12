@@ -4,6 +4,7 @@ html {
   --link-color-hover: #2196f3;
   --text-heading-color: #212121;
   --text-white-color: #ffffff;
+  --background-grey-icon-section-color: rgba(245, 244, 250, 1);
 }
 
 /* homepage style*/
@@ -234,33 +235,38 @@ body {
 
 .aboutus {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
 }
 
 .abouticon {
-  display: block;
   margin: auto;
-  padding: 25px 100px;
+  box-sizing: content-box;
+  
 }
 
 .aboutusicons {
-  width: 100%;
+  display: block;
   border-radius: 4px;
-  background-color: rgba(245, 244, 250, 1);
+  background-color: var(--background-grey-icon-section-color) ;
   margin-bottom: 30px;
+ 
 }
 
 .column {
-  float: left;
-  width: 270px;
-  margin: 0 15px;
-  text-align: justify;
-  align-items: center;
+ flex-grow: 1;
+ flex-basis: calc((100% - 120px) / 4);
 }
 
 .column h4 {
-  margin: 10;
+  font-family: var(--head-text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  color: rgba(33, 33, 33, 1);
+
 }
 .column p {
   font-family: var(--head-text);
@@ -268,7 +274,6 @@ body {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
   color: #757575;
   margin: 0;
 }
@@ -329,7 +334,7 @@ body {
 
 .ourteam {
   display: flex;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--background-grey-icon-section-color);
   width: 270px;
   justify-content: center;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -498,13 +503,14 @@ body {
   display: flex;
   flex-shrink: initial;
   flex-direction: column;
-  row-gap: 50px;
 }
 
-.container ul {
-  margin: auto;
-  padding: 0;
+.middlemain {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
+
 
 .products {
   display: flex;
