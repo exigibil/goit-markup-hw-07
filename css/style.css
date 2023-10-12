@@ -235,20 +235,26 @@ body {
 
 .aboutus {
   display: flex;
+  flex-basis: auto;
   gap: 30px;
   list-style-type: none;
+  box-sizing: content-box;
+ 
 }
 
 .abouticon {
   margin: auto;
   box-sizing: content-box;
-  
+ 
+  width: 65px;
+  height: 70px;
 }
 
 .aboutusicons {
   display: block;
   border-radius: 4px;
   background-color: var(--background-grey-icon-section-color) ;
+  padding: 25px;
   margin-bottom: 30px;
  
 }
@@ -414,8 +420,8 @@ body {
   justify-content: center;
 }
 .regularcustomersicon {
-  width: 170px;
-  height: 92px;
+  width: 106px;
+  height: 60px;
   border-radius: 4px;
   border: 1px;
   display: flex;
@@ -669,6 +675,7 @@ li .button:hover {
   letter-spacing: 0.03em;
   text-align: center;
   color: rgba(33, 33, 33, 1);
+  margin-bottom: 50px;
 }
 
 
