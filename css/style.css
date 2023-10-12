@@ -93,8 +93,6 @@ body {
   fill: var(--link-color-hover);
 }
 
-
-
 .navbar a:hover,
 .navbar a:focus {
   color: var(--link-color-hover);
@@ -133,6 +131,11 @@ body {
 .regularcustomersicon:hover {
   color: var(--link-color-hover);
   fill: var(--link-color-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-customers-buttons:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -189,9 +192,8 @@ body {
 
 .btnservice:focus {
   background-color: var(--link-color-hover);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .modal {
   position: fixed;
@@ -211,18 +213,15 @@ body {
   width: 528px;
   height: 581px;
   position: relative;
-  
 }
 
 .is-hidden {
   visibility: hidden;
- 
 }
-
 
 .close-btn {
   color: var(--text-heading-color);
-  border:1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   cursor: pointer;
   position: absolute;
@@ -239,13 +238,12 @@ body {
   gap: 30px;
   list-style-type: none;
   box-sizing: content-box;
- 
 }
 
 .abouticon {
   margin: auto;
   box-sizing: content-box;
- 
+
   width: 65px;
   height: 70px;
 }
@@ -253,15 +251,14 @@ body {
 .aboutusicons {
   display: block;
   border-radius: 4px;
-  background-color: var(--background-grey-icon-section-color) ;
+  background-color: var(--background-grey-icon-section-color);
   padding: 25px;
   margin-bottom: 30px;
- 
 }
 
 .column {
- flex-grow: 1;
- flex-basis: calc((100% - 120px) / 4);
+  flex-grow: 1;
+  flex-basis: calc((100% - 120px) / 4);
 }
 
 .column h4 {
@@ -272,7 +269,6 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: rgba(33, 33, 33, 1);
-
 }
 .column p {
   font-family: var(--head-text);
@@ -295,7 +291,6 @@ body {
 .whatwedoboxtext p {
   padding: 27px;
 }
-
 
 .whatwedo-container {
   background-color: #ffffff;
@@ -382,7 +377,7 @@ body {
 .ourteam .socialbuttons-container a:hover {
   fill: var(--text-white-color);
   background-color: var(--link-color-hover);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ourteam img {
@@ -411,6 +406,7 @@ body {
 
 .regular-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -465,7 +461,7 @@ body {
 .footeradress address a:focus,
 .footeradress address a:hover {
   color: var(--link-color-hover);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footerlogoadress {
@@ -505,35 +501,37 @@ body {
 
 .container {
   padding: 94px 215px;
-  justify-content: center;
-  display: flex;
-  flex-shrink: initial;
-  flex-direction: column;
+  margin: 0 auto;
 }
 
+.product-container {
+  align-items: center;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.team,
 .middlemain {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-
 .products {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0;
+  width: 100%;
+  box-sizing: content-box;
 }
 
 .productsimg {
   list-style-type: none;
-  height: 404px;
   justify-content: center;
-  display: block;
-  max-width: 370px;
-  flex-basis: calc((100% - 90px) / 3);
   border: 1px solid rgba(238, 238, 238, 1);
   cursor: pointer;
 }
@@ -568,7 +566,7 @@ body {
 
 .boximage:hover .overlay {
   transform: translatey(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .productsimg img {
@@ -678,7 +676,6 @@ li .button:hover {
   margin-bottom: 50px;
 }
 
-
 .regular-customers-buttons {
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
@@ -693,7 +690,6 @@ li .button:hover {
   align-items: center;
   padding: 16px 32px;
 }
-
 
 .regular-customers {
   display: flex;
