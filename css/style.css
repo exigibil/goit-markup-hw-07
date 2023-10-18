@@ -206,8 +206,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
-  transform: rotateX(360deg);
+  transform: scale(1);
   transition-duration: 510ms;
+  transition-timing-function: ease-in-out;
   z-index: 1;
 }
 
@@ -227,7 +228,7 @@ body {
   visibility: hidden;
   opacity: 0;
   pointer-events: fill;
-  rotate: 180deg;
+  scale: calc(1.3);
 }
 
 .btn-close-container {
@@ -246,6 +247,164 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.textfield {
+  height: 40px;
+  width: 100%;
+}
+
+.textfield {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 12px 11px 42px;
+  outline: none;
+}
+
+textarea {
+  height: 96px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+textarea::placeholder {
+  font-family: var(--head-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding-top: 6px;
+}
+
+input:focus,
+.textfield:focus,
+textarea:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textfield:focus + svg {
+  fill: rgba(33, 150, 243, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 41px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.form-container > p {
+  font-family: var(--head-text);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.form-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.form-input-container svg {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 15px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: max-content;
+}
+
+.form-label {
+  font-family: var(--head-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(117, 117, 117, 1);
+}
+
+.label-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.terms-and-conditions-container {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.terms-and-conditions-label span {
+  font-family: var(--head-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+}
+
+.terms-and-conditions-label span a {
+  color: rgba(33, 150, 243, 1);
+}
+
+.terms-and-conditions-label svg {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: calc(50% - 7.5px);
+  left: -1px;
+}
+
+.terms-and-conditions-check:not(:checked) {
+  visibility: hidden;
+}
+
+.terms-and-conditions-check:checked + label > svg {
+  display: none;
+}
+
+.btnform {
+  background-color: var(--link-color-hover);
+  width: 200px;
+  height: 50px;
+  color: var(--text-white-color);
+  font-family: var(--head-text);
+  font-size: 16px;
+  letter-spacing: 0.96px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px var(--link-color-hover);
 }
 
 .aboutus {
@@ -446,6 +605,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
 }
 
 .logo-text-footer a {
@@ -710,4 +870,73 @@ li .button:hover {
 .regular-customers {
   display: flex;
   gap: 30px;
+}
+
+.subscribe-section {
+  display: flex;
+  margin-left: 93px;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 1);
+  font-family: var(--head-text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscribe-btn .btnform {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btnform svg {
+  width: 24px;
+  height: 24px;
+  fill: rgba(255, 255, 255, 1);
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subcribe-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  width: 358px;
+  background: none;
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--head-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+}
+
+.subcribe-input::placeholder {
+  font-family: var(--head-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 0px;
 }
