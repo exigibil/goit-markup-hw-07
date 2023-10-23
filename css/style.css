@@ -941,3 +941,14 @@ li .button:hover {
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 0px;
 }
+
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px){
+  
+}
