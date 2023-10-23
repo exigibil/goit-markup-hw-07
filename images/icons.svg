@@ -388,5 +388,12 @@
                 d="M32 0l-32 18 10.227 3.788 15.773-14.788-11.998 16.186 0.010 0.004-0.012-0.004v8.814l5.735-6.691 7.265 2.691 5-28z">
             </path>
         </symbol>
+
+        <symbol id="icon-box-checked" viewBox="0 0 42 32">
+            <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff"
+                stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64"
+                d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z">
+            </path>
+        </symbol>
     </defs>
 </svg>

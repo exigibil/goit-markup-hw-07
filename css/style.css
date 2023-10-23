@@ -392,6 +392,7 @@ textarea:focus {
   display: none;
 }
 
+
 .btnform {
   background-color: var(--link-color-hover);
   width: 200px;
