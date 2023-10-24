@@ -2,6 +2,12 @@
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
 
+
+        <symbol id="icon-menu_burger" viewBox="0 0 32 32">
+            <path
+                d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z">
+            </path>
+        </symbol>
         <symbol id="icon-person-black-18dp-1" viewBox="0 0 32 32">
             <path
                 d="M16 16c2.947 0 5.333-2.387 5.333-5.333s-2.387-5.333-5.333-5.333c-2.947 0-5.333 2.387-5.333 5.333s2.387 5.333 5.333 5.333zM16 18.667c-3.56 0-10.667 1.787-10.667 5.333v1.333c0 0.733 0.6 1.333 1.333 1.333h18.667c0.733 0 1.333-0.6 1.333-1.333v-1.333c0-3.547-7.107-5.333-10.667-5.333z">
@@ -384,15 +390,17 @@
             </path>
         </symbol>
         <symbol id="icon-icon-send" viewBox="0 0 32 32">
-            <path fill="#fff" style="fill: var(--color1, #fff)"
+            <path
                 d="M32 0l-32 18 10.227 3.788 15.773-14.788-11.998 16.186 0.010 0.004-0.012-0.004v8.814l5.735-6.691 7.265 2.691 5-28z">
             </path>
         </symbol>
 
-        <symbol id="icon-box-checked" viewBox="0 0 42 32">
-            <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff"
-                stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64"
-                d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z">
+        <symbol id="icon-icon-check" viewBox="0 0 34 32">
+            <path
+                d="M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z">
+            </path>
+            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267"
+                d="M8.442 16.537l-0.147-0.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z">
             </path>
         </symbol>
     </defs>
