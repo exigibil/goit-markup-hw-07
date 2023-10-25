@@ -50,6 +50,7 @@
         </div>
 
       </div>
+
   <!-- Mobile Navigation-->
       <div class="menu-logo-mobile" data-modal>
         <svg> 
@@ -170,58 +171,66 @@
     <section class="container">
 
       <div class="middlemain">
-        <ul class="aboutus">
-          <li class="column">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-antenna-1"></use>
-              </svg></div>
-            <h4>ATTENTION TO DETAILS</h4>
-            <p>
-              We go into all the details and processes of your business to
-              develop a customized solution.
-            </p>
-          </li>
-          <li class="column">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-clock-1"></use>
-              </svg></div>
-            <h4>PUNCTUALITY</h4>
-            <p>
-              With us, you can feel safe and secure. An important principle of
-              the company: respect your time and deadlines.
-            </p>
-          </li>
-          <li class="column">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-diagram-1"></use>
-              </svg></div>
-            <h4>PLANNING</h4>
-            <p>
-              You will be able to observe and participate in every phase of
-              solution development and implementation.
-            </p>
-          </li>
-          <li class="column">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-astronaut-1"></use>
-              </svg></div>
-            <h4>MODERN TECHNOLOGIES</h4>
-            <p>
-              We use innovative tools to solve assigned tasks. It's time to
-              simplify work processes.
-            </p>
-          </li>
-        </ul>
+        <div class="aboutus">
+         
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg></div>
+              <h4>ATTENTION TO DETAILS</h4>
+              <p>
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </div>
+
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg></div>
+              <h4>PUNCTUALITY</h4>
+              <p>
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and deadlines.
+              </p>
+            </div>
+         
+          
+
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg></div>
+              <h4>PLANNING</h4>
+              <p>
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </div>
+
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg></div>
+              <h4>MODERN TECHNOLOGIES</h4>
+              <p>
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </div>
+          
+        </div>
 
         <!--What we do in images-->
 
-        <div class="whatwedo-container ">
+        <div class="whatwedo-container">
 
           <div>
             <h2>What we do</h2>
           </div>
 
           <div class="whatwedoimglist">
+            
             <div class="whatwedoboximage">
               <div><img src="images/tst.jpg" alt="writing at keyboard" /></div>
               <div class="whatwedoboxtext">
@@ -250,13 +259,34 @@
     <!-- Our team -->
     <section class="ourteam-container container">
 
-      <div class="team ">
-        <h2>Our Team</h2>
+      <div class="team-container">
 
-        <ul class="footer-main-img">
+        <div><h2>Our Team</h2></div>
+
+        <ul class="team-main-img">
+
           <li class="ourteam">
             <div>
-              <img src="images/christopherwalker.jpg" alt="men foto" />
+              <picture>
+                
+                <!--Desktop-->
+                <source 
+                  media="(min-widh: 1158px)"
+                  srcset="
+                  ./images/christopherwalker_d.jpg 1x,
+                  ./images/christopherwalker_d.jpg 2x
+                  " 
+                />
+                <!--Tableta-->
+                <source 
+                media="(min-widh: 768px)" 
+                srcset="./images/christopherwalker_t.png" 
+                />
+                
+                <img src="images/christopherwalker_m.png" alt="men foto" />
+                
+              </picture>
+              
               <div>
                 <h4>Christopher Walker</h4>
                 <p>Product Designer</p>
@@ -277,9 +307,10 @@
               </div>
             </div>
           </li>
+
           <li class="ourteam">
             <div>
-              <img src="images/kylieevans.jpg" alt="woman foto" />
+              <img src="images/kylieevans_d.jpg" alt="woman foto" />
               <div>
                 <h4>Kylie Evans</h4>
                 <p>Frontend Developer</p>
@@ -300,9 +331,10 @@
               </div>
             </div>
           </li>
+
           <li class="ourteam">
             <div>
-              <img src="images/ryanharris.jpg" alt="men foto" />
+              <img src="images/ryanharris_d.jpg" alt="men foto" />
               <div>
                 <h4>Ryan Harris</h4>
                 <p>Marketing</p>
@@ -323,9 +355,10 @@
               </div>
             </div>
           </li>
+
           <li class="ourteam">
             <div>
-              <img src="images/tylermoore.jpg" alt="men foto" />
+              <img src="images/tylermoore_d.jpg" alt="men foto" />
               <div>
                 <h4>Tyler Moore</h4>
                 <p>Ui Designer</p>
@@ -377,11 +410,13 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footerlogoadress">
+  <footer class="footer container">
+    <div class="footerlogoadress ">
+
       <div class="logo-text-footer">
         <a href="/index.html"><span class="blue">Web</span>Studio</a>
       </div>
+
       <div class="footeradress">
         <address>
           <p>695 Park Ave, NY 10065, USA</p>
@@ -390,6 +425,7 @@
         </address>
       </div>
     </div>
+
     <div class="socialfind">
       <h4>FIND US ON</h4>
       <div class="socialbuttons-container">
@@ -426,6 +462,7 @@
         </form>
         
     </div>
+
   </footer>
 </body>
 

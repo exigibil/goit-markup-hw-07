@@ -95,7 +95,7 @@ margin: 16px 15px;
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/mainsolutionimgbg.png");
+    url("../images/mainsolutionimgbg_d.png");
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -104,6 +104,7 @@ margin: 16px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .headmain h1 {
@@ -122,7 +123,7 @@ margin: 16px 15px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 200px 452px;
+  padding: 118px 60px;
 }
 
 .button-container {
@@ -361,12 +362,17 @@ textarea:focus {
   border: 1px var(--link-color-hover);
 }
 
+.container {
+  padding: 60px 15px;
+}
+
 .aboutus {
   display: flex;
   flex-direction: column;
   gap: 30px;
   list-style-type: none;
   box-sizing: content-box;
+  
 }
 
 .abouticon {
@@ -378,19 +384,17 @@ textarea:focus {
 
 .aboutusicons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background-color: var(--background-grey-icon-section-color);
   padding: 25px;
   margin-bottom: 30px;
 }
 
-.column {
-  flex-grow: 1;
-  flex-basis: calc((100% - 120px) / 4);
-  width: 100%;
-}
 
-.column h4 {
+
+.column-aboutus h4 {
   font-family: var(--head-text);
   font-size: 14px;
   font-weight: 700;
@@ -398,8 +402,11 @@ textarea:focus {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: rgba(33, 33, 33, 1);
+  text-align: center;
+ 
 }
-.column p {
+
+.column-aboutus p {
   font-family: var(--head-text);
   font-size: 14px;
   font-weight: 400;
@@ -422,34 +429,13 @@ textarea:focus {
 }
 
 .whatwedo-container {
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
+  display: none;
 }
 
-.whatwedo-container div h2 {
-  margin: 50px;
-}
-
-.whatwedoimglist {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 30px;
-}
-
-.whatwedoimglist img {
-  max-width: 370px;
-  max-height: 294px;
-}
 
 .ourteam-container {
   background-color: #f5f4fa;
+  display: flex;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -458,14 +444,21 @@ textarea:focus {
   margin: 0;
 }
 
-.team h2 {
+.team-container h2 {
   padding-bottom: 50px;
+
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(50% - 500px) / 1;
+  flex-direction: column;
 }
 
 .ourteam {
   display: flex;
-  background-color: var(--background-grey-icon-section-color);
-  width: 270px;
+  background-color: var(--text-white-color);
   justify-content: center;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -509,14 +502,11 @@ textarea:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ourteam img {
-  width: 270px;
-  height: 260px;
-}
 
-.footer-main-img {
+.team-main-img {
   width: 100%;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   list-style-type: none;
   margin: 0;
@@ -542,8 +532,13 @@ textarea:focus {
 
 .regular-customers {
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% - 226px) / 3;
   justify-content: center;
 }
+
+
+
 .regularcustomersicon {
   width: 106px;
   height: 60px;
@@ -557,9 +552,13 @@ textarea:focus {
   background-color: #2f303a;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.logo-text-footer {
+  padding-bottom: 28px;
 }
 
 .logo-text-footer a {
@@ -571,6 +570,7 @@ textarea:focus {
   font-family: var(--logo-text);
   text-decoration: none;
   color: var(--text-white-color);
+  
 }
 
 .socialfind > h4,
@@ -595,15 +595,23 @@ textarea:focus {
 }
 
 .footerlogoadress {
-  display: inline-block;
-  padding: 60px 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 60px;
+  
+ 
 }
 
 .socialfind {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
   width: 206px;
+  padding-bottom: 60px;
+  text-align: center;
+
 }
 
 .socialbuttons-container a {
@@ -611,6 +619,7 @@ textarea:focus {
   display: flex;
   justify-content: center;
   border-radius: 50px;
+  
 }
 
 .socialbuttons-container {
@@ -620,7 +629,7 @@ textarea:focus {
   align-items: center;
   width: 100%;
   gap: 10px;
-  padding-top: 20px;
+  
 }
 
 .socialbuttonlink {
@@ -629,10 +638,7 @@ textarea:focus {
 
 /* Portofolio style*/
 
-.container {
-  padding: 94px 215px;
-  margin: 0 auto;
-}
+
 
 .product-container {
   align-items: center;
@@ -644,11 +650,12 @@ textarea:focus {
   width: 1200px;
 }
 
-.team,
+.team-container,
 .middlemain {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-basis: calc(100% - 356px) / 2;
+  flex-wrap: wrap;
 }
 
 .products {
@@ -828,16 +835,18 @@ li .button:hover {
 
 .subscribe-section {
   display: flex;
-  margin-left: 93px;
-  flex-direction: row;
+  flex-direction: column;
   color: rgba(255, 255, 255, 1);
   font-family: var(--head-text);
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: left;
   text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .contact-form {
@@ -862,7 +871,7 @@ li .button:hover {
 
 .subscribe-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 12px;
   justify-content: center;
   align-items: center;
@@ -979,11 +988,55 @@ li .button:hover {
     display: none;
   }
 
+
+  .middlemain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(100% - 356px) / 2;
+    flex-wrap: wrap;
+  }
+  
+
+  .team-main-img {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: calc(100% - 206px) / 2;
+  }
+
+.team-main-img {
+  flex-wrap: wrap;
+  flex-basis: calc(50% - 738px) / 2;
+}
+
+.aboutus {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style-type: none;
+  box-sizing: content-box;
+  flex-basis: calc(( 100% - 170px) / 2);
+}
+
+.column-aboutus {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
 }
 
 /* Desktop */
 @media screen and (min-width: 1178px) {
   
+  .container {
+    padding: 94px 215px;
+    margin: 0 auto;
+  }
+
   .logo-text {
     margin: 24px 93px 25px 215px;
     }
@@ -998,14 +1051,92 @@ li .button:hover {
   
   }
 
-  .aboutus {
+  .topservices {
+    padding: 200px;
+  }
+
+
+
+  .whatwedo-container {
+    background-color: #ffffff;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-basis: auto;
-    gap: 30px;
-    list-style-type: none;
-    box-sizing: content-box;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
   }
   
+  .whatwedo-container div h2 {
+    margin: 50px;
+  }
+  
+  
+  
+  .whatwedoimglist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  .whatwedoimglist img {
+    max-width: 370px;
+    max-height: 294px;
+  }
+
+   .team-main-img {
+    display: flex;
+    flex-direction: row;
+  }
+   
+  .team-container,
+.middlemain {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer {
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+.footerlogoadress {
+  display: flex;
+  text-align: left;
+}
+
+.footeradress {
+  padding-right: 70px;
+}
+
+  
+
+.subscribe-section {
+  flex-direction: row;
+  padding-left: 93px;
+ }
+
+ .subscribe-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialfind {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.socialbuttons-container {
+  padding-top: 20px;
+  
+}
 
 }
