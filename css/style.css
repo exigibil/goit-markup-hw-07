@@ -40,22 +40,20 @@ body {
 }
 
 .logo-text {
-margin: 16px 15px;
+  margin: 16px 15px;
 }
 
 .menu-logo-mobile svg {
- width: 40px;
- height: 40px;
- fill: rgba(33, 33, 33, 1);
+  width: 40px;
+  height: 40px;
+  fill: rgba(33, 33, 33, 1);
 }
-
 
 .menu-logo-mobile {
   position: absolute;
   top: 10px;
   right: 15px;
 }
-
 
 .logo-text a {
   width: 145px;
@@ -83,7 +81,6 @@ margin: 16px 15px;
   display: none;
 }
 
-
 .regular-customers-buttons:hover {
   border: 1px solid rgba(33, 150, 243, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -95,7 +92,7 @@ margin: 16px 15px;
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/mainsolutionimgbg_d.png");
+    url("../images/mainsolutionimgbg_m.png");
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -109,13 +106,14 @@ margin: 16px 15px;
 
 .headmain h1 {
   width: 100%;
+  font-family: var(--head-text);
   font-weight: 900;
-  font-size: 44px;
-  align-items: center;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 0.06em;
+  text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
+  color: var(--text-white-color);
 }
 
 .topservices {
@@ -137,6 +135,7 @@ margin: 16px 15px;
   font-family: var(--head-text);
   text-transform: uppercase;
   font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.96px;
   font-weight: 700;
   cursor: pointer;
@@ -163,6 +162,7 @@ margin: 16px 15px;
   transform: scale(1);
   transition-duration: 510ms;
   transition-timing-function: ease-in-out;
+  visibility: visible;
   z-index: 1;
 }
 
@@ -180,7 +180,6 @@ margin: 16px 15px;
 
 .is-hidden {
   visibility: hidden;
-  opacity: 0;
   pointer-events: fill;
   scale: calc(1.3);
 }
@@ -283,10 +282,7 @@ textarea:focus {
   left: 15px;
 }
 
-.contact-form {
-  width: 100%;
-  max-width: max-content;
-}
+
 
 .form-label {
   font-family: var(--head-text);
@@ -346,7 +342,6 @@ textarea:focus {
   display: none;
 }
 
-
 .btnform {
   background-color: var(--link-color-hover);
   width: 200px;
@@ -378,7 +373,6 @@ textarea:focus {
   flex-direction: column;
   gap: 30px;
   box-sizing: content-box;
-  
 }
 
 .abouticon {
@@ -398,8 +392,6 @@ textarea:focus {
   margin-bottom: 30px;
 }
 
-
-
 .column-aboutus h4 {
   font-family: var(--head-text);
   font-size: 14px;
@@ -409,7 +401,6 @@ textarea:focus {
   margin-bottom: 10px;
   color: rgba(33, 33, 33, 1);
   text-align: center;
- 
 }
 
 .column-aboutus p {
@@ -438,7 +429,6 @@ textarea:focus {
   display: none;
 }
 
-
 .ourteam-container {
   background-color: #f5f4fa;
   display: flex;
@@ -452,7 +442,6 @@ textarea:focus {
 
 .team-container h2 {
   padding-bottom: 50px;
-
 }
 
 .team-container {
@@ -507,7 +496,6 @@ textarea:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .team-main-img {
   width: 100%;
   display: flex;
@@ -539,11 +527,9 @@ textarea:focus {
 .regular-customers {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% - 226px) / 3;
+  flex-basis: calc((100% - 226px) / 3);
   justify-content: center;
 }
-
-
 
 .regularcustomersicon {
   width: 106px;
@@ -576,7 +562,6 @@ textarea:focus {
   font-family: var(--logo-text);
   text-decoration: none;
   color: var(--text-white-color);
-  
 }
 
 .socialfind > h4,
@@ -600,14 +585,15 @@ textarea:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footerlogoadress > div {
+  padding-bottom: 60px;
+}
+
 .footerlogoadress {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 60px;
-  
- 
 }
 
 .socialfind {
@@ -617,7 +603,6 @@ textarea:focus {
   width: 206px;
   padding-bottom: 60px;
   text-align: center;
-
 }
 
 .socialbuttons-container a {
@@ -625,7 +610,6 @@ textarea:focus {
   display: flex;
   justify-content: center;
   border-radius: 50px;
-  
 }
 
 .socialbuttons-container {
@@ -635,7 +619,6 @@ textarea:focus {
   align-items: center;
   width: 100%;
   gap: 10px;
-  
 }
 
 .socialbuttonlink {
@@ -644,25 +627,21 @@ textarea:focus {
 
 /* Portofolio style*/
 
-
-
 .product-container {
-  align-items: center;
-  box-sizing: content-box;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 1200px;
+  gap: 40px;
+  width: 100%;
 }
-
 
 .products {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
   gap: 30px;
   width: 100%;
-  box-sizing: content-box;
 }
 
 .productsimg {
@@ -670,6 +649,7 @@ textarea:focus {
   justify-content: center;
   border: 1px solid rgba(238, 238, 238, 1);
   cursor: pointer;
+  width: 100%;
 }
 
 .productsimg .boximage {
@@ -705,14 +685,6 @@ textarea:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.productsimg img {
-  width: 370px;
-  height: 294px;
-  top: 262px;
-  left: 215px;
-  vertical-align: middle;
-}
-
 .productsimg div {
   display: flex;
   flex-direction: column;
@@ -743,23 +715,25 @@ textarea:focus {
 }
 
 .productnav {
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .buttonproduct {
-  width: 516px;
-  height: 38px;
-  top: 174px;
-  left: 542px;
+  width: 100%;
   list-style-type: none;
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-basis: calc((65% - 15px) / 1);
 }
 
 .buttonproduct .button {
   background-color: #f5f4fa;
   font-family: var(--head-text);
   border: none;
+  width: 100%;
   color: #000000;
   text-decoration: none;
   font-weight: 500;
@@ -768,7 +742,6 @@ textarea:focus {
   font-size: 16px;
   cursor: pointer;
   text-transform: none;
-  justify-content: center;
   padding: 0 18px;
   border-radius: 4px;
 }
@@ -843,9 +816,12 @@ li .button:hover {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  align-items: center;
   justify-content: center;
+  width: 100%;
+}
 
+.subcribe-form {
+  width: 100%;
 }
 
 .contact-form {
@@ -874,6 +850,7 @@ li .button:hover {
   gap: 12px;
   justify-content: center;
   align-items: center;
+  
 }
 
 .subcribe-input {
@@ -882,7 +859,7 @@ li .button:hover {
   width: 358px;
   height: 50px;
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
   background: none;
   padding: 15px 16px;
   color: rgba(255, 255, 255, 0.6);
@@ -903,18 +880,12 @@ li .button:hover {
   padding: 15px 0px;
 }
 
-
-
-
-
 /* Tablet */
 @media screen and (min-width: 768px) {
-
   .topnav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-
   }
 
   .navbar ul {
@@ -925,33 +896,33 @@ li .button:hover {
     display: flex;
     gap: 50px;
   }
-  
+
   .navbar a {
     text-decoration: none;
     color: black;
     font-weight: 500;
   }
-  
+
   .navbar .currentweblist {
     border-bottom: 3px solid var(--link-color-hover);
   }
-  
+
   .navbar .currentweb {
     color: var(--link-color-hover);
     fill: var(--link-color-hover);
   }
-  
+
   .navbar a:hover,
   .navbar a:focus {
     color: var(--link-color-hover);
     fill: var(--link-color-hover);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .navbar a:active {
     color: red;
   }
-  
+
   .navcontact {
     display: flex;
     flex-direction: column;
@@ -960,21 +931,21 @@ li .button:hover {
     width: 35%;
     margin: 32px;
   }
-  
+
   .navcontact span {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
   }
-  
+
   .navcontact a {
     text-decoration: none;
     color: #757575;
     font-weight: 500;
     display: flex;
   }
-  
+
   .navcontact a:focus,
   .navcontact a:hover,
   .regularcustomersicon:hover {
@@ -987,36 +958,91 @@ li .button:hover {
     display: none;
   }
 
- 
+  .headmain {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mainsolutionimgbg_t.png");
+  }
+
   .team-main-img {
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .ourteam {
-    flex-basis: calc((100% - 30px) / 2)
+    flex-basis: calc((100% - 30px) / 2);
   }
 
+  .aboutus {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-.aboutus {
-  flex-wrap: wrap;
-  flex-direction: row;
-  
-}
+  .column-aboutus {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 30px) / 2);
+  }
 
-.column-aboutus {
+  .subcribe-input {
+    width: 450px;
+  }
+
+  /* Portofolio style*/
+
+  .portofolio-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .product-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    gap: 30px;
+  }
+
+  .productnav {
+    display: inline;
+  }
+
+  .buttonproduct {
+    gap: 8px;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: content-box;
+  }
+
+  .productsimg {
+    display: grid;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  .productsimg {
+    width: 370px;
+  }
+
+  /* Footer tablet */
+
+ 
+.footerlogoadress {
   display: flex;
-  flex-direction: column;
-  flex-basis: calc((100% - 30px) / 2);
+  flex-direction: row;
+  gap: 165px;
 }
 
 }
 
 /* Desktop */
 @media screen and (min-width: 1178px) {
-  
   .container {
     padding: 94px 215px;
     margin: 0 auto;
@@ -1024,8 +1050,8 @@ li .button:hover {
 
   .logo-text {
     margin: 24px 93px 25px 215px;
-    }
-  
+  }
+
   .navcontact {
     display: flex;
     flex-direction: row;
@@ -1033,14 +1059,25 @@ li .button:hover {
     width: 35%;
     margin: 32px;
     justify-content: center;
-  
+  }
+
+  .headmain {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mainsolutionimgbg_d.png");
+  }
+
+  .headmain h1 {
+    font-size: 44px;
+    line-height: 60px;
   }
 
   .topservices {
     padding: 200px;
   }
-
-
 
   .whatwedo-container {
     background-color: #ffffff;
@@ -1051,13 +1088,11 @@ li .button:hover {
     text-align: center;
     flex-direction: column;
   }
-  
+
   .whatwedo-container div h2 {
     margin: 50px;
   }
-  
-  
-  
+
   .whatwedoimglist {
     display: flex;
     justify-content: center;
@@ -1065,91 +1100,127 @@ li .button:hover {
     flex-direction: row;
     gap: 30px;
   }
-  
+
   .whatwedoimglist img {
     max-width: 370px;
     max-height: 294px;
   }
 
-   .team-main-img {
+  .team-main-img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
-   
-.team-container,
-.middlemain {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
-.ourteam {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
- 
+  .team-container,
+  .middlemain {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 
-.team-main-img {
+  .ourteam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .team-main-img {
     justify-content: center;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-}
-
-.footer {
-  justify-content: center;
-  flex-direction: row;
-}
-
-
-.footerlogoadress {
-  display: flex;
-  text-align: left;
-}
-
-.footeradress {
-  padding-right: 70px;
-}
-
-  
-
-.subscribe-section {
-  flex-direction: row;
-  padding-left: 93px;
- }
-
- .subscribe-container {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-}
-
-.socialfind {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.socialbuttons-container {
-  padding-top: 20px;
   }
 
+  .footer {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .footerlogoadress {
+    display: flex;
+    text-align: left;
+  }
+
+  .footeradress {
+    padding-right: 70px;
+  }
+
+  .subscribe-section {
+    flex-direction: row;
+    padding-left: 93px;
+  }
+
+  .subscribe-container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socialfind {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .socialbuttons-container {
+    padding-top: 20px;
+  }
 
   .aboutus {
     width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
-
   }
 
   .regular-customers {
     flex-wrap: nowrap;
     flex-direction: row;
   }
- 
 
+  .contact-form {
+   text-align: start;
+  }
+
+  /* Portofolio style*/
+
+  .portofolio-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 94px 215px;
+  }
+
+  .product-container {
+    flex-direction: column;
+    gap: 50px;
+    width: 1200px;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+  }
+
+  .productnav {
+    display: inline;
+  }
+
+  .buttonproduct {
+    gap: 8px;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: content-box;
+    justify-content: center;
+  }
+
+  .productsimg {
+    display: grid;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  .productsimg {
+    width: 370px;
+  }
 }

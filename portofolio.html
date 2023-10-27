@@ -20,20 +20,24 @@
 </head>
 
 <body>
+  <!--Navigation bar-->
   <header>
     <div class="nav-container">
       <div class="logo-text">
         <a href="index.html"><span class="blue">Web</span>Studio</a>
       </div>
 
+
+
       <div class="topnav">
         <nav class="navbar">
           <ul>
-            <li><a href="index.html">Studio</a></li>
-            <li class="currentweblist"><a href="portofolio.html" class="currentweb">Portofolio</a></li>
+            <li><a href="index.html" class="currentweb">Studio</a></li>
+            <li class="currentweblist"><a href="portofolio.html">Portofolio</a></li>
             <li><a href="contact.html">Contacts</a></li>
           </ul>
         </nav>
+
 
         <div class="navcontact">
 
@@ -44,12 +48,20 @@
           <a href="tel:+1212-772-4150"> <span> <svg class="icon iconphone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>+1 212-772-4150 </span></a>
-
         </div>
+
       </div>
+
+      <!-- Mobile Navigation-->
+      <div class="menu-logo-mobile" data-modal>
+        <svg>
+          <use href="./images/icons.svg#icon-menu_burger"></use>
+        </svg>
+      </div>
+    </div>
   </header>
   <main>
-    <section class="container">
+    <section class="portofolio-container container">
       <div class="product-container">
         <div class="productnav">
           <ul class="buttonproduct">
@@ -64,7 +76,7 @@
           <ul class="products">
             <li class="productsimg">
               <div class="boximage">
-                <img src="images/technoduck_d.jpg" alt="men foto" />
+                <img src="images/technoduck_m.png" alt="laptop with three photos" />
 
                 <div class="overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
@@ -79,7 +91,7 @@
               </div>
             </li>
             <li class="productsimg">
-              <div class="boximage"><img src="images/posterneworleans_d.jpg" alt="woman foto" />
+              <div class="boximage"><img src="images/posterneworleans_m.png" alt="two basketball players" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -91,7 +103,7 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/seafoodrestaurant_d.jpg" alt="men foto" />
+              <div class="boximage"><img src="images/seafoodrestaurant_m.png" alt="shark logo" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -103,7 +115,7 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/projectprime_d.jpg" alt="men foto" />
+              <div class="boximage"><img src="images/projectprime_m.png" alt="headphones" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -115,7 +127,7 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/projectboxes_d.jpg" alt="men foto" />
+              <div class="boximage"><img src="images/projectboxes_m.png" alt="two boxes" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -127,7 +139,7 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/inspiration_d.jpg" alt="men foto" />
+              <div class="boximage"><img src="images/inspiration_m.png" alt="display monitor" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -139,7 +151,7 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/limitededition_d.jpg" alt="men foto" />
+              <div class="boximage"><img src="images/limitededition_m.png" alt="open book" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -151,7 +163,7 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/projectlab_d.jpg" alt="men foto" />
+              <div class="boximage"><img src="images/projectlab_m.png" alt="men foto" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -163,7 +175,7 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/growing_d.jpg" alt="men foto" />
+              <div class="boximage"><img src="images/growing_m.png" alt="men foto" />
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -178,35 +190,42 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footerlogoadress">
-      <div class="logo-text-footer">
-        <a href="/index.html"><span class="blue">Web</span>Studio</a>
+
+  <footer class="footer container">
+    <div class="footerlogoadress ">
+
+      <div>
+        <div class="logo-text-footer">
+          <a href="/index.html"><span class="blue">Web</span>Studio</a>
+        </div>
+
+        <div class="footeradress">
+          <address>
+            <p>695 Park Ave, NY 10065, USA</p>
+            <a href="mailto:info@devstudio.com"> info@devstudio.com </a><br />
+            <a href="tel:+1212-772-4150">+1 212-772-4150</a>
+          </address>
+        </div>
       </div>
-      <div class="footeradress">
-        <address>
-          <p>695 Park Ave, NY 10065, USA</p>
-          <a href="mailto:info@devstudio.com"> info@devstudio.com </a><br />
-          <a href="tel:+1212-772-4150">+1 212-772-4150</a>
-        </address>
+
+      <div class="socialfind">
+        <h4>FIND US ON</h4>
+        <div class="socialbuttons-container">
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg></a>
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg></a>
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg></a>
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg></a>
+        </div>
       </div>
-    </div>
-    <div class="socialfind">
-      <h4>FIND US ON</h4>
-      <div class="socialbuttons-container">
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-instagram-2"></use>
-          </svg></a>
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-twitter-1"></use>
-          </svg></a>
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-facebook-1"></use>
-          </svg></a>
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-linkedin-1"></use>
-          </svg></a>
-      </div>
+
     </div>
 
     <div class="subscribe-section">
@@ -223,21 +242,20 @@
               </svg>
             </button></div>
         </div>
-
       </form>
     </div>
   </footer>
-</body>
 
 
-<script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
+
+
+</body>
+
 
 
 </html>

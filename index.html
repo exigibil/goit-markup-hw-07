@@ -22,6 +22,7 @@
   <!--Navigation bar-->
   <header>
     <div class="nav-container ">
+      
       <div class="logo-text">
         <a href="index.html"><span class="blue">Web</span>Studio</a>
       </div>
@@ -48,8 +49,8 @@
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>+1 212-772-4150 </span></a>
         </div>
-
       </div>
+    </div>
 
   <!-- Mobile Navigation-->
       <div class="menu-logo-mobile" data-modal>
@@ -66,9 +67,8 @@
       <div class="topservices ">
         <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
         <div class="button-container"><button data-modal-open class="btnservice" type="button"> Request our services
-          </button></div>
-      </div>
-
+        </button></div>
+    </div>
 
       <!-- Book Service Modal -->
       <div class="modal is-hidden" data-modal>
@@ -79,7 +79,6 @@
               </svg></div>
 
             <div class="form-container">
-
 
               <p>Leave your information and we'll call you back</p>
 
@@ -92,7 +91,7 @@
                   </label>
 
                   <div class="form-input-container"> <!--input-container-->
-                    <input class="textfield" type="name" name="name" id="Name" placeholder="Name" />
+                    <input class="textfield" type="text" name="name" id="name" placeholder="Name" />
                     <svg class="form-icon">
                       <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                     </svg>
@@ -148,7 +147,7 @@
                       I agree with the letter and accept the <a href="#" target="_blank">Terms and
                         Conditions</a>
                     </span>
-
+                  </label>
                     
                 </div>
                 
@@ -254,6 +253,7 @@
 
           </div>
         </div>
+      </div>
     </section>
 
     <!-- Our team -->
@@ -264,6 +264,20 @@
         <div><h2>Our Team</h2></div>
 
         <ul class="team-main-img">
+
+
+          <!-- <picture>
+      <source srcset="https://picsum.photos/id/237/400/600" media="(max-width: 600px)">
+      <source srcset="https://picsum.photos/id/237/800/400" media="(min-width: 601px)">
+      <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
+    </picture>
+  
+   <picture>
+      <source srcset="https://picsum.photos/id/237/400/600 400w, https://picsum.photos/id/237/800/1200 800w" media="(max-width: 600px)" sizes="(min-width: 480px) 480px, 100vw">
+      <source srcset="https://picsum.photos/id/237/800/400 800w, https://picsum.photos/id/237/1600/800 1600w" media="(min-width: 601px)" sizes="(min-width: 800px) 800px, 100vw">
+      <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
+    </picture>-->
+
 
           <li class="ourteam">
             <div>
@@ -465,67 +479,61 @@
   <footer class="footer container">
     <div class="footerlogoadress ">
 
-      <div class="logo-text-footer">
-        <a href="/index.html"><span class="blue">Web</span>Studio</a>
+      <div>
+        <div class="logo-text-footer">
+          <a href="/index.html"><span class="blue">Web</span>Studio</a>
+        </div>
+
+        <div class="footeradress">
+          <address>
+            <p>695 Park Ave, NY 10065, USA</p>
+            <a href="mailto:info@devstudio.com"> info@devstudio.com </a><br />
+            <a href="tel:+1212-772-4150">+1 212-772-4150</a>
+          </address>
+        </div>
       </div>
 
-      <div class="footeradress">
-        <address>
-          <p>695 Park Ave, NY 10065, USA</p>
-          <a href="mailto:info@devstudio.com"> info@devstudio.com </a><br />
-          <a href="tel:+1212-772-4150">+1 212-772-4150</a>
-        </address>
+      <div class="socialfind">
+        <h4>FIND US ON</h4>
+        <div class="socialbuttons-container">
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg></a>
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg></a>
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg></a>
+          <a class="socialbuttonlink"><svg>
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg></a>
+        </div>
       </div>
+
     </div>
-
-    <div class="socialfind">
-      <h4>FIND US ON</h4>
-      <div class="socialbuttons-container">
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-instagram-2"></use>
-          </svg></a>
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-twitter-1"></use>
-          </svg></a>
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-facebook-1"></use>
-          </svg></a>
-        <a class="socialbuttonlink"><svg>
-            <use href="./images/icons.svg#icon-linkedin-1"></use>
-          </svg></a>
-      </div>
-    </div>
-
+    
     <div class="subscribe-section">
-        <form name="subcribe-form" autocomplete="on" novalidate class="contact-form">
-          
-          <div>Subscribe to the newsletter</div>
+      <form name="subcribe-form" autocomplete="on" novalidate class="contact-form">
 
-          <div class="subscribe-container">
-            <input class="subcribe-input textfield" type="email" name="email" id="Email" placeholder="E-mail" />
-            
-            <div class="subscribe-btn"><button class="btnform" type="submit" value="Subscribe">Subscribe 
+        <div>Subscribe to the newsletter</div>
+
+        <div class="subscribe-container">
+          <input class="subcribe-input textfield" type="email" name="email"  placeholder="E-mail" />
+
+          <div class="subscribe-btn"><button class="btnform" type="submit" value="Subscribe">Subscribe
               <svg>
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button></div>
-          </div>
-          
-        </form>
-        
+        </div>
+      </form>
     </div>
-
   </footer>
+  
+
 </body>
 
-
-<script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
 <script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
 
 </html>
