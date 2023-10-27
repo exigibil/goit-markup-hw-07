@@ -55,6 +55,76 @@ body {
   right: 15px;
 }
 
+.js-menu-container {
+  display: none;
+}
+
+.js-menu-container.is-open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 337px;
+  height: 100%;
+  
+  z-index: 1;
+}
+
+.js-menu-container .js-close-menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.js-menu-container .js-close-menu svg {
+  width: 40px;
+  height: 40px;
+}
+
+.js-close-menu div svg:hover {
+  fill: var(--link-color-hover);
+}
+
+.menu-drawer-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+ 
+
+}
+
+.menu-drawer-navigation ul {
+  list-style-type: none;
+  font-family: var(--head-text);
+  font-size: 40px;
+  font-weight: 500;
+    line-height: 47px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 48px 40px;
+}
+
+
+.menu-drawer-navigation ul li a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.mobile-sociallink-menu {
+  display: flex;
+  gap: 10px;
+
+}
+
+.mobile-sociallink-menu a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .logo-text a {
   width: 145px;
   height: 31px;
@@ -162,15 +232,14 @@ body {
   transform: scale(1);
   transition-duration: 510ms;
   transition-timing-function: ease-in-out;
-  visibility: visible;
   z-index: 1;
 }
 
 .modal-content {
   background-color: rgba(255, 255, 255, 1);
   padding: 2px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   position: relative;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -257,7 +326,9 @@ textarea:focus {
   flex-direction: column;
   gap: 10px;
   position: relative;
+ 
 }
+
 
 .form-container > p {
   font-family: var(--head-text);
@@ -297,16 +368,21 @@ textarea:focus {
 .label-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 4px;
 }
 
-.terms-and-conditions-container {
+.label-terms {
   display: flex;
-  flex-direction: row;
-  gap: 7px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+.terms-and-conditions-container {
+  display: flex;
+  gap: 7px;
+  justify-content: flex-start;
   position: relative;
   cursor: pointer;
   margin-bottom: 30px;
@@ -314,9 +390,9 @@ textarea:focus {
 
 .terms-and-conditions-label span {
   font-family: var(--head-text);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 14.06px;
   letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
@@ -327,10 +403,10 @@ textarea:focus {
 }
 
 .terms-and-conditions-label svg {
-  width: 13px;
-  height: 12px;
+  width: 14px;
+  height: 13px;
   position: absolute;
-  top: calc(50% - 6.5px);
+  top: calc(50% - 7px);
   left: 0px;
 }
 
@@ -820,12 +896,17 @@ li .button:hover {
   width: 100%;
 }
 
+
+
 .subcribe-form {
   width: 100%;
 }
 
+
+
 .contact-form {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -1078,6 +1159,19 @@ li .button:hover {
   .topservices {
     padding: 200px;
   }
+
+  .modal-content {
+    width: 528px;
+    height: 581px;
+  }
+  
+  
+.terms-and-conditions-label span {
+  font-size: 14px;
+  line-height: 24px;
+
+}
+
 
   .whatwedo-container {
     background-color: #ffffff;

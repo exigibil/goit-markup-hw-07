@@ -22,70 +22,41 @@
   <!--Navigation bar-->
   <header>
     <div class="nav-container ">
-
+      
       <div class="logo-text">
         <a href="index.html"><span class="blue">Web</span>Studio</a>
       </div>
 
 
-      <div class="topnav">
-        <nav class="navbar">
-          <ul>
-            <li class="currentweblist"><a href="index.html" class="currentweb">Studio</a></li>
-            <li><a href="portofolio.html">Portofolio</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-          </ul>
-        </nav>
+        <div class="topnav">
+            <nav class="navbar">
+            <ul>
+                <li class="currentweblist"><a href="index.html" class="currentweb">Studio</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+            </nav>
 
+    
+            <div class="navcontact">
 
-        <div class="navcontact">
+                <a href="mailto:info@devstudio.com"> <span><svg class="icon iconenvelope">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg> info@devstudio.com </span></a>
 
-          <a href="mailto:info@devstudio.com"> <span><svg class="icon iconenvelope">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg> info@devstudio.com </span></a>
-
-          <a href="tel:+1212-772-4150"> <span> <svg class="icon iconphone">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>+1 212-772-4150 </span></a>
+                <a href="tel:+1212-772-4150"> <span> <svg class="icon iconphone">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>+1 212-772-4150 </span></a>
+            </div>
         </div>
+    </div>
+
+  <!-- Mobile Navigation-->
+      <div class="menu-logo-mobile" data-modal>
+        <svg> 
+          <use href="./images/icons.svg#icon-menu_burger"></use>
+        </svg>
       </div>
-    </div>
-
-    <!-- Mobile Navigation-->
-    <div class="menu-logo-mobile js-open-menu">
-      <svg>
-        <use href="./images/icons.svg#icon-menu_burger"></use>
-      </svg>
-    </div>
-
-    <div class="js-menu-container">
-        <div class="js-close-menu">
-          <div><svg class="close-btn">
-              <use href="./images/icons.svg#icon-close-black-x"></use>
-            </svg></div>
-
-        <nav class="menu-drawer-navigation">
-          <ul>
-            <li><a href="index.html" class="currentweb">Studio</a></li>
-            <li class="currentweblist"><a href="portofolio.html">Portofolio</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-          </ul>
-
-          <div>
-            <a href="tel:+1212-772-4150"> +1 212-772-4150 </a>
-            <a href="mailto:info@devstudio.com">mailto:info@devstudio.com</a>
-          </div>
-          
-          <div class="mobile-sociallink-menu">
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
-            <a href="https://www.Twiter.com/" target="_blank">Twiter</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
-            <a href="https://www.Faceebook.com/" target="_blank">Faceebook</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
-            <a href="https://www.Linkedin.com/" target="_blank">Linkedin</a>
-          </div>
-     </div>
 
   </header>
 
@@ -95,8 +66,8 @@
       <div class="topservices ">
         <h1>EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
         <div class="button-container"><button data-modal-open class="btnservice" type="button"> Request our services
-          </button></div>
-      </div>
+        </button></div>
+    </div>
 
       <!-- Book Service Modal -->
       <div class="modal is-hidden" data-modal>
@@ -112,85 +83,76 @@
 
               <form name="request_service" autocomplete="on" novalidate class="contact-form">
 
-                 
-                    <div class="label-content"> <!--div class="form-section"-->
+                <div class="label-content"> <!--div class="form-section"-->
 
-                      <label class="form-label">
-                        Name
-                      </label>
+                  <label class="form-label">
+                    Name
+                  </label>
 
-                      <div class="form-input-container"> <!--input-container-->
-                        <input class="textfield" type="text" name="name" id="name" placeholder="Name" />
-                        <svg class="form-icon">
-                          <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                        </svg>
-                      </div>
-                    </div>
-
-
-                    <div class="label-content">
-                      <label class="form-label">
-                        Telephone
-                      </label>
-
-                      <div class="form-input-container">
-                        <input class="textfield" type="tel" name="telephone" id="Telephone" placeholder="Telephone" />
-                        <svg class="form-icon">
-                          <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <div class="label-content">
-                      <label class="form-label">
-                        Email
-                      </label>
-                      <div class="form-input-container">
-                        <input class="textfield" type="email" name="email" id="Email" placeholder="E-mail" />
-                        <svg class="form-icon">
-                          <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <div class="label-content">
-                      <label class="form-label">
-                        Comments
-                      </label>
-                      <textarea placeholder="Enter the text"></textarea>
-                    </div>
-
-                    <div class="label-terms">
-
-                      <div class="terms-and-conditions-container">
-                        <input type="checkbox" class="terms-and-conditions-check" name="terms-and-conditions-check"
-                          id="terms-and-conditions-check" value="Checked" />
-
-                        <label class="terms-and-conditions-label" for="terms-and-conditions-check">
-
-                          <svg class="form-icon checkbox">
-                            <use href="./images/icons.svg#icon-check-box"></use>
-                          </svg>
+                  <div class="form-input-container"> <!--input-container-->
+                    <input class="textfield" type="text" name="name" id="name" placeholder="Name" />
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
 
 
+                <div class="label-content">
+                  <label class="form-label">
+                    Telephone
+                  </label>
 
-                          <span>
-                            I agree with the letter and accept the <a href="#" target="_blank">Terms and
-                              Conditions</a>
-                          </span>
-                        </label>
-                      </div>
+                  <div class="form-input-container">
+                    <input class="textfield" type="tel" name="telephone" id="Telephone" placeholder="Telephone"/>
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
 
-                      <div>
-                        <input class="btnform" type="submit" value="Send" />
-                      </div>
-                      
+                <div class="label-content">
+                  <label class="form-label">
+                    Email
+                  </label>
+                  <div class="form-input-container">
+                    <input class="textfield" type="email" name="email" id="Email" placeholder="E-mail" />
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
 
-                    </div>
+                <div class="label-content">
+                  <label class="form-label">
+                    Comments
+                  </label>
+                  <textarea placeholder="Enter the text"></textarea>
+                </div>
 
+                <div class="label-content terms-and-conditions-container">
+                  <input type="checkbox" class="terms-and-conditions-check" name="terms-and-conditions-check"
+                    id="terms-and-conditions-check" value="Checked" />
+
+                  <label class="terms-and-conditions-label" for="terms-and-conditions-check">
+
+                    <svg class="form-icon checkbox">
+                      <use href="./images/icons.svg#icon-check-box"></use>
+                    </svg>
+
+                
+
+                    <span>
+                      I agree with the letter and accept the <a href="#" target="_blank">Terms and
+                        Conditions</a>
+                    </span>
+                  </label>
                     
-                 
-
+                </div>
+                
+                <div><input class="btnform" type="submit" value="Send" /></div>
+                
+                
 
               </form>
 
@@ -208,53 +170,53 @@
 
       <div class="middlemain">
         <div class="aboutus">
+         
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg></div>
+              <h4>ATTENTION TO DETAILS</h4>
+              <p>
+                We go into all the details and processes of your business to
+                develop a customized solution.
+              </p>
+            </div>
 
-          <div class="column-aboutus">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-antenna-1"></use>
-              </svg></div>
-            <h4>ATTENTION TO DETAILS</h4>
-            <p>
-              We go into all the details and processes of your business to
-              develop a customized solution.
-            </p>
-          </div>
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg></div>
+              <h4>PUNCTUALITY</h4>
+              <p>
+                With us, you can feel safe and secure. An important principle of
+                the company: respect your time and deadlines.
+              </p>
+            </div>
+         
+          
 
-          <div class="column-aboutus">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-clock-1"></use>
-              </svg></div>
-            <h4>PUNCTUALITY</h4>
-            <p>
-              With us, you can feel safe and secure. An important principle of
-              the company: respect your time and deadlines.
-            </p>
-          </div>
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg></div>
+              <h4>PLANNING</h4>
+              <p>
+                You will be able to observe and participate in every phase of
+                solution development and implementation.
+              </p>
+            </div>
 
-
-
-          <div class="column-aboutus">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-diagram-1"></use>
-              </svg></div>
-            <h4>PLANNING</h4>
-            <p>
-              You will be able to observe and participate in every phase of
-              solution development and implementation.
-            </p>
-          </div>
-
-          <div class="column-aboutus">
-            <div class="aboutusicons"><svg class="abouticon">
-                <use href="./images/icons.svg#icon-astronaut-1"></use>
-              </svg></div>
-            <h4>MODERN TECHNOLOGIES</h4>
-            <p>
-              We use innovative tools to solve assigned tasks. It's time to
-              simplify work processes.
-            </p>
-          </div>
-
+            <div class="column-aboutus">
+              <div class="aboutusicons"><svg class="abouticon">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg></div>
+              <h4>MODERN TECHNOLOGIES</h4>
+              <p>
+                We use innovative tools to solve assigned tasks. It's time to
+                simplify work processes.
+              </p>
+            </div>
+          
         </div>
 
         <!--What we do in images-->
@@ -266,7 +228,7 @@
           </div>
 
           <div class="whatwedoimglist">
-
+            
             <div class="whatwedoboximage">
               <div><img src="images/tst.jpg" alt="writing at keyboard" /></div>
               <div class="whatwedoboxtext">
@@ -298,9 +260,7 @@
 
       <div class="team-container">
 
-        <div>
-          <h2>Our Team</h2>
-        </div>
+        <div><h2>Our Team</h2></div>
 
         <ul class="team-main-img">
 
@@ -322,17 +282,23 @@
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
+                <source 
+                  media="(min-widh: 1158px)"
+                  srcset="
                   ./images/christopherwalker_d.jpg 1x,
                   ./images/christopherwalker_d.jpg 2x
-                  " />
+                  " 
+                />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/christopherwalker_t.png" />
-
+                <source 
+                media="(min-widh: 768px)" 
+                srcset="./images/christopherwalker_t.png" 
+                />
+                
                 <img src="images/christopherwalker_m.png" alt="men foto" />
-
+                
               </picture>
-
+              
               <div>
                 <h4>Christopher Walker</h4>
                 <p>Product Designer</p>
@@ -358,17 +324,23 @@
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
+                <source 
+                  media="(min-widh: 1158px)"
+                  srcset="
                   ./images/kylieevans_d.jpg 1x,
                   ./images/kylieevans_d.jpg 2x
-                  " />
+                  " 
+                />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/kylieevans_t.png" />
-
+                <source 
+                media="(min-widh: 768px)" 
+                srcset="./images/kylieevans_t.png" 
+                />
+                
                 <img src="images/kylieevans_m.png" alt="woman foto" />
-
+                
               </picture>
-
+              
               <div>
                 <h4>Kylie Evans</h4>
                 <p>Frontend Developer</p>
@@ -394,15 +366,21 @@
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
+                <source 
+                  media="(min-widh: 1158px)"
+                  srcset="
                   ./images/ryanharris_d.jpg 1x,
                   ./images/ryanharris_d.jpg 2x
-                  " />
+                  " 
+                />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/ryanharris_t.png" />
-
+                <source 
+                media="(min-widh: 768px)" 
+                srcset="./images/ryanharris_t.png" 
+                />
+                
                 <img src="images/ryanharris_m.png" alt="man foto" />
-
+                
               </picture>
               <div>
                 <h4>Ryan Harris</h4>
@@ -429,17 +407,23 @@
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
+                <source 
+                  media="(min-widh: 1158px)"
+                  srcset="
                   ./images/tylermoore_d.jpg 1x,
                   ./images/tylermoore_d.jpg 2x
-                  " />
+                  " 
+                />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/tylermoore_t.png" />
-
+                <source 
+                media="(min-widh: 768px)" 
+                srcset="./images/tylermoore_t.png" 
+                />
+                
                 <img src="images/tylermoore_m.png" alt="man foto" />
-
+                
               </picture>
-
+           
               <div>
                 <h4>Tyler Moore</h4>
                 <p>Ui Designer</p>
@@ -527,14 +511,14 @@
       </div>
 
     </div>
-
+    
     <div class="subscribe-section">
       <form name="subcribe-form" autocomplete="on" novalidate class="contact-form">
 
         <div>Subscribe to the newsletter</div>
 
         <div class="subscribe-container">
-          <input class="subcribe-input textfield" type="email" name="email" placeholder="E-mail" />
+          <input class="subcribe-input textfield" type="email" name="email"  placeholder="E-mail" />
 
           <div class="subscribe-btn"><button class="btnform" type="submit" value="Subscribe">Subscribe
               <svg>
@@ -545,15 +529,10 @@
       </form>
     </div>
   </footer>
-
+  
 
 </body>
 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"></script>
 <script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
-
 
 </html>
