@@ -59,33 +59,38 @@
     </div>
 
     <div class="js-menu-container">
-        <div class="js-close-menu">
-          <div><svg class="close-btn">
-              <use href="./images/icons.svg#icon-close-black-x"></use>
-            </svg></div>
+      <div class="js-close-menu">
+        <div class="close-btn-container">
+          <svg class="close-btn">
+            <use href="./images/icons.svg#icon-close-black-x"></use>
+          </svg>
+        </div>
 
         <nav class="menu-drawer-navigation">
-          <ul>
+          <ul class="menu-mobile-links">
             <li><a href="index.html" class="currentweb">Studio</a></li>
             <li class="currentweblist"><a href="portofolio.html">Portofolio</a></li>
             <li><a href="contact.html">Contacts</a></li>
           </ul>
 
-          <div>
+          <div class="menu-mobile-adress">
             <a href="tel:+1212-772-4150"> +1 212-772-4150 </a>
-            <a href="mailto:info@devstudio.com">mailto:info@devstudio.com</a>
+            <a class="email-adress" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </div>
-          
+
           <div class="mobile-sociallink-menu">
+
             <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
+            <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
             <a href="https://www.Twiter.com/" target="_blank">Twiter</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
+            <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
             <a href="https://www.Faceebook.com/" target="_blank">Faceebook</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
+            <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
             <a href="https://www.Linkedin.com/" target="_blank">Linkedin</a>
           </div>
-     </div>
+        </nav>
+      </div>
+    </div>
 
   </header>
 
@@ -112,91 +117,81 @@
 
               <form name="request_service" autocomplete="on" novalidate class="contact-form">
 
-                 
-                    <div class="label-content"> <!--div class="form-section"-->
 
-                      <label class="form-label">
-                        Name
-                      </label>
+                <div class="label-content"> <!--div class="form-section"-->
 
-                      <div class="form-input-container"> <!--input-container-->
-                        <input class="textfield" type="text" name="name" id="name" placeholder="Name" />
-                        <svg class="form-icon">
-                          <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                        </svg>
-                      </div>
-                    </div>
+                  <label class="form-label">
+                    Name
+                  </label>
 
-
-                    <div class="label-content">
-                      <label class="form-label">
-                        Telephone
-                      </label>
-
-                      <div class="form-input-container">
-                        <input class="textfield" type="tel" name="telephone" id="Telephone" placeholder="Telephone" />
-                        <svg class="form-icon">
-                          <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <div class="label-content">
-                      <label class="form-label">
-                        Email
-                      </label>
-                      <div class="form-input-container">
-                        <input class="textfield" type="email" name="email" id="Email" placeholder="E-mail" />
-                        <svg class="form-icon">
-                          <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <div class="label-content">
-                      <label class="form-label">
-                        Comments
-                      </label>
-                      <textarea placeholder="Enter the text"></textarea>
-                    </div>
-
-                    <div class="label-terms">
-
-                      <div class="terms-and-conditions-container">
-                        <input type="checkbox" class="terms-and-conditions-check" name="terms-and-conditions-check"
-                          id="terms-and-conditions-check" value="Checked" />
-
-                        <label class="terms-and-conditions-label" for="terms-and-conditions-check">
-
-                          <svg class="form-icon checkbox">
-                            <use href="./images/icons.svg#icon-check-box"></use>
-                          </svg>
+                  <div class="form-input-container"> <!--input-container-->
+                    <input class="textfield" type="text" name="name" id="name" placeholder="Name" />
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
 
 
+                <div class="label-content">
+                  <label class="form-label">
+                    Telephone
+                  </label>
 
-                          <span>
-                            I agree with the letter and accept the <a href="#" target="_blank">Terms and
-                              Conditions</a>
-                          </span>
-                        </label>
-                      </div>
+                  <div class="form-input-container">
+                    <input class="textfield" type="tel" name="telephone" id="Telephone" placeholder="Telephone" />
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
 
-                      <div>
-                        <input class="btnform" type="submit" value="Send" />
-                      </div>
-                      
+                <div class="label-content">
+                  <label class="form-label">
+                    Email
+                  </label>
+                  <div class="form-input-container">
+                    <input class="textfield" type="email" name="email" id="Email" placeholder="E-mail" />
+                    <svg class="form-icon">
+                      <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                  </div>
+                </div>
 
-                    </div>
+                <div class="label-content">
+                  <label class="form-label">
+                    Comments
+                  </label>
+                  <textarea placeholder="Enter the text"></textarea>
+                </div>
 
-                    
-                 
+                <div class="label-terms">
+
+                  <div class="terms-and-conditions-container">
+                    <input type="checkbox" class="terms-and-conditions-check" name="terms-and-conditions-check"
+                      id="terms-and-conditions-check" value="Checked" />
+
+                    <label class="terms-and-conditions-label" for="terms-and-conditions-check">
+
+                      <svg class="form-icon checkbox">
+                        <use href="./images/icons.svg#icon-check-box"></use>
+                      </svg>
 
 
+
+                      <span>
+                        I agree with the letter and accept the <a href="#" target="_blank">Terms and
+                          Conditions</a>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <input class="btnform" type="submit" value="Send" />
+                  </div>
+                </div>
               </form>
-
             </div>
-
-
           </div>
         </div>
       </div>
@@ -268,21 +263,30 @@
           <div class="whatwedoimglist">
 
             <div class="whatwedoboximage">
-              <div><img src="images/tst.jpg" alt="writing at keyboard" /></div>
+              <picture>
+                <source srcset="./images/tst.jpg 1x, ./images/tst_x2.png 2x" media="(min-width: 1158px)" />
+                <img src="./images/tst.jpg" alt="hands on keyboard" />
+              </picture>
               <div class="whatwedoboxtext">
                 <p>DESKTOP APPS</p>
               </div>
             </div>
 
             <div class="whatwedoboximage">
-              <div><img src="images/mobiletst.jpg" alt="women with mobile in her hand" /></div>
+              <picture>
+                <source srcset="./images/mobiletst.jpg 1x, ./images/mobiletst_x2.png 2x" media="(min-width: 1158px)" />
+                <img src="./images/mobiletst.jpg" alt="holding a cell phone" />
+              </picture>
               <div class="whatwedoboxtext">
                 <p>MOBILE APPS</p>
               </div>
             </div>
 
             <div class="whatwedoboximage">
-              <div><img src="images/tablet.jpg" alt="Grafic tablet" /></div>
+              <picture>
+                <source srcset="./images/tablet.jpg 1x, ./images/tablet_x2.png 2x" media="(min-width: 1158px)" />
+                <img src="./images/tablet.jpg" alt="holding a graphical tablet" />
+              </picture>
               <div class="whatwedoboxtext">
                 <p>DESIGN SOLUTIONS</p>
               </div>
@@ -305,32 +309,15 @@
         <ul class="team-main-img">
 
 
-          <!-- <picture>
-      <source srcset="https://picsum.photos/id/237/400/600" media="(max-width: 600px)">
-      <source srcset="https://picsum.photos/id/237/800/400" media="(min-width: 601px)">
-      <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
-    </picture>
-  
-   <picture>
-      <source srcset="https://picsum.photos/id/237/400/600 400w, https://picsum.photos/id/237/800/1200 800w" media="(max-width: 600px)" sizes="(min-width: 480px) 480px, 100vw">
-      <source srcset="https://picsum.photos/id/237/800/400 800w, https://picsum.photos/id/237/1600/800 1600w" media="(min-width: 601px)" sizes="(min-width: 800px) 800px, 100vw">
-      <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy">
-    </picture>-->
-
-
           <li class="ourteam">
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
-                  ./images/christopherwalker_d.jpg 1x,
-                  ./images/christopherwalker_d.jpg 2x
-                  " />
+                <source srcset="./images/christopherwalker_d.png 1x, ./images/christopherwalker_dx2.png 2x"
+                  media="(min-width: 1158px)" />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/christopherwalker_t.png" />
-
-                <img src="images/christopherwalker_m.png" alt="men foto" />
-
+                <source srcset="./images/christopherwalker_t.png" media="(min-width: 768px)" />
+                <img src="./images/christopherwalker_m.png" alt="man photo" />
               </picture>
 
               <div>
@@ -358,15 +345,11 @@
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
-                  ./images/kylieevans_d.jpg 1x,
-                  ./images/kylieevans_d.jpg 2x
-                  " />
+                <source srcset="./images/Kylieevans_d.png 1x, ./images/Kylieevans_dx2.png 2x"
+                  media="(min-width: 1158px)" />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/kylieevans_t.png" />
-
-                <img src="images/kylieevans_m.png" alt="woman foto" />
-
+                <source srcset="./images/Kylieevans_t.png" media="(min-width: 768px)" />
+                <img src="./images/kylieevans_m.png" alt="woman photo" />
               </picture>
 
               <div>
@@ -394,16 +377,13 @@
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
-                  ./images/ryanharris_d.jpg 1x,
-                  ./images/ryanharris_d.jpg 2x
-                  " />
+                <source srcset="./images/ryanharris_d.png 1x, ./images/ryanharris_dx2.png 2x"
+                  media="(min-width: 1158px)" />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/ryanharris_t.png" />
-
-                <img src="images/ryanharris_m.png" alt="man foto" />
-
+                <source srcset="./images/ryanharris_t.png" media="(min-width: 768px)" />
+                <img src="./images/ryanharris_m.png" alt="man photo" />
               </picture>
+
               <div>
                 <h4>Ryan Harris</h4>
                 <p>Marketing</p>
@@ -429,16 +409,13 @@
             <div>
               <picture>
                 <!--Desktop-->
-                <source media="(min-widh: 1158px)" srcset="
-                  ./images/tylermoore_d.jpg 1x,
-                  ./images/tylermoore_d.jpg 2x
-                  " />
+                <source srcset="./images/tylermoore_d.png 1x, ./images/tylermoore_dx2.png 2x"
+                  media="(min-width: 1158px)" />
                 <!--Tableta-->
-                <source media="(min-widh: 768px)" srcset="./images/tylermoore_t.png" />
-
-                <img src="images/tylermoore_m.png" alt="man foto" />
-
+                <source srcset="./images/tylermoore_t.png" media="(min-width: 768px)" />
+                <img src="./images/tylermoore_m.png" alt="man photo" />
               </picture>
+
 
               <div>
                 <h4>Tyler Moore</h4>

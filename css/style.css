@@ -4,6 +4,7 @@ html {
   --link-color-hover: #2196f3;
   --text-heading-color: #212121;
   --text-white-color: #ffffff;
+  --text-grey-adress: #757575;
   --background-grey-icon-section-color: rgba(245, 244, 250, 1);
 }
 
@@ -39,10 +40,6 @@ body {
   justify-content: space-between;
 }
 
-.logo-text {
-  margin: 16px 15px;
-}
-
 .menu-logo-mobile svg {
   width: 40px;
   height: 40px;
@@ -53,10 +50,12 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
+  bottom: 0;
 }
 
 .js-menu-container {
   display: none;
+  transform: scale(2);
 }
 
 .js-menu-container.is-open {
@@ -66,23 +65,22 @@ body {
   top: 0;
   right: 0;
   background-color: #fff;
-  width: 337px;
+  width: 100%;
   height: 100%;
-  
   z-index: 1;
+  transition-duration: 510ms;
+  transition-timing-function: ease-in-out;
+  transform: scale(1);
 }
 
 .js-menu-container .js-close-menu {
   border: none;
   background: none;
-  cursor: pointer;
-  align-self: flex-end;
   margin-bottom: 30px;
 }
 
 .js-menu-container .js-close-menu svg {
-  width: 40px;
-  height: 40px;
+  box-sizing: content-box;
 }
 
 .js-close-menu div svg:hover {
@@ -92,9 +90,43 @@ body {
 .menu-drawer-navigation {
   display: flex;
   flex-direction: column;
-  gap: 32px;
- 
+  gap: 64px;
+  padding: 48px 40px;
+}
 
+.menu-mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 242px;
+  cursor: pointer;
+}
+
+.menu-mobile-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  cursor: pointer;
+}
+
+.menu-mobile-adress a {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-family: var(--head-text);
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: flex;
+  color: rgba(33, 33, 33, 1);
+}
+
+.menu-mobile-adress .email-adress {
+  color: var(--text-grey-adress);
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .menu-drawer-navigation ul {
@@ -102,35 +134,57 @@ body {
   font-family: var(--head-text);
   font-size: 40px;
   font-weight: 500;
-    line-height: 47px;
+  line-height: 47px;
   letter-spacing: 0.02em;
   text-align: left;
-  padding: 48px 40px;
 }
-
 
 .menu-drawer-navigation ul li a {
   list-style-type: none;
   text-decoration: none;
+  color: rgba(33, 33, 33, 1);
 }
 
 .mobile-sociallink-menu {
   display: flex;
+  justify-content: center;
   gap: 10px;
-
 }
 
 .mobile-sociallink-menu a {
   list-style-type: none;
   text-decoration: none;
+  font-family: var(--head-text);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: rgba(33, 33, 33, 1);
+}
+
+/* hover and focus mobile*/
+
+.mobile-sociallink-menu a:focus,
+.mobile-sociallink-menu a:hover,
+.menu-mobile-links a:focus,
+.menu-mobile-links a:hover,
+.menu-mobile-adress a:focus,
+.menu-mobile-adress a:hover {
+  color: var(--link-color-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-text {
+  margin: 16px 15px;
 }
 
 .logo-text a {
-  width: 145px;
-  height: 31px;
-  top: 24px;
-  left: 215px;
+  width: 134px;
+  height: 28px;
+  line-height: 28.18px;
   font-size: 24px;
+  letter-spacing: 0.03em;
   font-family: var(--logo-text);
   text-decoration: none;
   color: #000000;
@@ -145,6 +199,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin-top: 32px;
+  margin-right: 70px;
 }
 
 .topnav {
@@ -326,9 +381,7 @@ textarea:focus {
   flex-direction: column;
   gap: 10px;
   position: relative;
- 
 }
-
 
 .form-container > p {
   font-family: var(--head-text);
@@ -353,8 +406,6 @@ textarea:focus {
   left: 15px;
 }
 
-
-
 .form-label {
   font-family: var(--head-text);
   font-size: 12px;
@@ -378,7 +429,6 @@ textarea:focus {
   align-items: center;
 }
 
-
 .terms-and-conditions-container {
   display: flex;
   gap: 7px;
@@ -395,7 +445,7 @@ textarea:focus {
   line-height: 14.06px;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--text-grey-adress);
 }
 
 .terms-and-conditions-label span a {
@@ -485,7 +535,7 @@ textarea:focus {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-grey-adress);
   margin: 0;
 }
 
@@ -517,7 +567,7 @@ textarea:focus {
 }
 
 .team-container h2 {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .team-container {
@@ -543,6 +593,10 @@ textarea:focus {
 
 .ourteam div div h4 {
   margin-bottom: 10px;
+}
+
+.ourteam div div p {
+  color: rgba(117, 117, 117, 1);
 }
 
 .socialfind .socialbuttons-container .socialbuttonlink,
@@ -649,7 +703,7 @@ textarea:focus {
 .footeradress address a {
   text-decoration: none;
   display: inline-flex;
-  color: #757575;
+  color: var(--text-grey-adress);
   font-weight: 400;
   margin-right: 10px;
   padding: 10px 0px;
@@ -785,7 +839,7 @@ textarea:focus {
   line-height: 30px;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--text-grey-adress);
   margin: 20px 24px;
   margin-top: 0;
 }
@@ -881,6 +935,15 @@ li .button:hover {
   gap: 30px;
 }
 
+.navcontact a:focus,
+.navcontact a:hover,
+.menu-logo-mobile svg:hover,
+.regularcustomersicon:hover {
+  color: var(--link-color-hover);
+  fill: var(--link-color-hover);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .subscribe-section {
   display: flex;
   flex-direction: column;
@@ -896,13 +959,9 @@ li .button:hover {
   width: 100%;
 }
 
-
-
 .subcribe-form {
   width: 100%;
 }
-
-
 
 .contact-form {
   display: flex;
@@ -931,7 +990,6 @@ li .button:hover {
   gap: 12px;
   justify-content: center;
   align-items: center;
-  
 }
 
 .subcribe-input {
@@ -969,9 +1027,12 @@ li .button:hover {
     justify-content: space-between;
   }
 
+  .logo-text {
+    margin: 26px 15px;
+  }
+
   .navbar ul {
     background-color: #ffffff;
-    line-height: 16.41px;
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -982,6 +1043,11 @@ li .button:hover {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    font-family: var(--head-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
   }
 
   .navbar .currentweblist {
@@ -1010,29 +1076,26 @@ li .button:hover {
     gap: 10px;
     justify-content: flex-start;
     width: 35%;
-    margin: 32px;
+    margin: 21px 15px;
   }
 
   .navcontact span {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
   }
 
   .navcontact a {
     text-decoration: none;
-    color: #757575;
+    color: var(--text-grey-adress);
     font-weight: 500;
     display: flex;
-  }
-
-  .navcontact a:focus,
-  .navcontact a:hover,
-  .regularcustomersicon:hover {
-    color: var(--link-color-hover);
-    fill: var(--link-color-hover);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: flex-start;
+    font-family: var(--head-text);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
   }
 
   .menu-logo-mobile {
@@ -1070,6 +1133,10 @@ li .button:hover {
     flex-basis: calc((100% - 30px) / 2);
   }
 
+  .column-aboutus h4 {
+    text-align: start;
+  }
+
   .subcribe-input {
     width: 450px;
   }
@@ -1105,21 +1172,16 @@ li .button:hover {
   .productsimg {
     display: grid;
     flex-basis: calc((100% - 30px) / 2);
-  }
-
-  .productsimg {
     width: 370px;
   }
 
   /* Footer tablet */
 
- 
-.footerlogoadress {
-  display: flex;
-  flex-direction: row;
-  gap: 165px;
-}
-
+  .footerlogoadress {
+    display: flex;
+    flex-direction: row;
+    gap: 165px;
+  }
 }
 
 /* Desktop */
@@ -1130,7 +1192,7 @@ li .button:hover {
   }
 
   .logo-text {
-    margin: 24px 93px 25px 215px;
+    margin: 24px 93px 26px 215px;
   }
 
   .navcontact {
@@ -1164,14 +1226,11 @@ li .button:hover {
     width: 528px;
     height: 581px;
   }
-  
-  
-.terms-and-conditions-label span {
-  font-size: 14px;
-  line-height: 24px;
 
-}
-
+  .terms-and-conditions-label span {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   .whatwedo-container {
     background-color: #ffffff;
@@ -1275,7 +1334,7 @@ li .button:hover {
   }
 
   .contact-form {
-   text-align: start;
+    text-align: start;
   }
 
   /* Portofolio style*/

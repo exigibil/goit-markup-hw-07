@@ -32,8 +32,8 @@
       <div class="topnav">
         <nav class="navbar">
           <ul>
-            <li><a href="index.html" class="currentweb">Studio</a></li>
-            <li class="currentweblist"><a href="portofolio.html">Portofolio</a></li>
+            <li><a href="index.html">Studio</a></li>
+            <li class="currentweblist"><a class="currentweb" href="portofolio.html">Portofolio</a></li>
             <li><a href="contact.html">Contacts</a></li>
           </ul>
         </nav>
@@ -53,42 +53,45 @@
       </div>
 
       <!-- Mobile Navigation-->
-    <div class="menu-logo-mobile js-open-menu">
-      <svg>
-        <use href="./images/icons.svg#icon-menu_burger"></use>
-      </svg>
-    </div>
+      <div class="menu-logo-mobile js-open-menu">
+        <svg>
+          <use href="./images/icons.svg#icon-menu_burger"></use>
+        </svg>
+      </div>
 
-    <div class="js-menu-container">
+      <div class="js-menu-container">
         <div class="js-close-menu">
           <div><svg class="close-btn">
               <use href="./images/icons.svg#icon-close-black-x"></use>
-            </svg></div>
-
-        <nav class="menu-drawer-navigation">
-          <ul>
-            <li><a href="index.html" class="currentweb">Studio</a></li>
-            <li class="currentweblist"><a href="portofolio.html">Portofolio</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-          </ul>
-
-          <div>
-            <a href="tel:+1212-772-4150"> +1 212-772-4150 </a>
-            <a href="mailto:info@devstudio.com">mailto:info@devstudio.com</a>
+            </svg>
           </div>
-          
-          <div class="mobile-sociallink-menu">
-            
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
-            <a href="https://www.Twiter.com/" target="_blank">Twiter</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
-            <a href="https://www.Faceebook.com/" target="_blank">Faceebook</a>
-            <img src="./images/horizontal dash.svg" alt="Horizontal Dash" />
-            <a href="https://www.Linkedin.com/" target="_blank">Linkedin</a>
-          </div>
-     </div>
 
+          <nav class="menu-drawer-navigation">
+            <ul class="menu-mobile-links">
+              <li><a href="index.html" class="currentweb">Studio</a></li>
+              <li class="currentweblist"><a href="portofolio.html">Portofolio</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+
+            <div class="menu-mobile-adress">
+              <a href="tel:+1212-772-4150"> +1 212-772-4150 </a>
+              <a class="email-adress" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+
+            <div class="mobile-sociallink-menu">
+
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+              <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
+              <a href="https://www.Twiter.com/" target="_blank">Twiter</a>
+              <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
+              <a href="https://www.Faceebook.com/" target="_blank">Faceebook</a>
+              <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
+              <a href="https://www.Linkedin.com/" target="_blank">Linkedin</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -107,8 +110,14 @@
           <ul class="products">
             <li class="productsimg">
               <div class="boximage">
-                <img src="images/technoduck_m.png" alt="laptop with three photos" />
-
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/technoduck_d.png 1x, ./images/technoduck_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/technoduck_t.png" media="(min-width: 768px)" />
+                  <img src="images/technoduck_m.png" alt="laptop with three photos" />
+                </picture>
                 <div class="overlay">
                   <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for
                     digital espionage and attacks on competitors' secure servers.</p>
@@ -122,7 +131,15 @@
               </div>
             </li>
             <li class="productsimg">
-              <div class="boximage"><img src="images/posterneworleans_m.png" alt="two basketball players" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/posterneworleans_d.png 1x, ./images/posterneworleans_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/posterneworleans_t.png" media="(min-width: 768px)" />
+                  <img src="images/posterneworleans_m.png" alt="two basketball players" />
+                </picture>
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -134,7 +151,16 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/seafoodrestaurant_m.png" alt="shark logo" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/seafoodrestaurant_d.png 1x, ./images/seafoodrestaurant_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/seafoodrestaurant_t.png" media="(min-width: 768px)" />
+                  <img src="images/seafoodrestaurant_m.png" alt="shark logo" />
+                </picture>
+
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -146,7 +172,16 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/projectprime_m.png" alt="headphones" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/projectprime_d.png 1x, ./images/projectprime_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/projectprime_t.png" media="(min-width: 768px)" />
+                  <img src="images/projectprime_m.png" alt="headphones" />
+                </picture>
+
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -158,7 +193,16 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/projectboxes_m.png" alt="two boxes" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/projectboxes_d.png 1x, ./images/projectboxes_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/projectboxes_t.png" media="(min-width: 768px)" />
+                  <img src="images/projectboxes_m.png" alt="two boxes" />
+                </picture>
+
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -170,7 +214,16 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/inspiration_m.png" alt="display monitor" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/inspiration_d.png 1x, ./images/inspiration_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/inspiration_t.png" media="(min-width: 768px)" />
+                  <img src="images/inspiration_m.png" alt="display monitor" />
+                </picture>
+
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -182,7 +235,16 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/limitededition_m.png" alt="open book" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/limitededition_d.png 1x, ./images/limitededition_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/limitededition_t.png" media="(min-width: 768px)" />
+                  <img src="images/limitededition_m.png" alt="open book" />
+                </picture>
+
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -194,7 +256,16 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/projectlab_m.png" alt="men foto" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/projectlab_d.png 1x, ./images/projectlab_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/projectlab_t.png" media="(min-width: 768px)" />
+                  <img src="images/projectlab_m.png" alt="label tag" />
+                </picture>
+
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -206,7 +277,16 @@
             </li>
 
             <li class="productsimg">
-              <div class="boximage"><img src="images/growing_m.png" alt="men foto" />
+              <div class="boximage">
+                <picture>
+                  <!--Desktop-->
+                  <source srcset="./images/growing_d.png 1x, ./images/growing_d_x2.png 2x"
+                    media="(min-width: 1158px)" />
+                  <!--Tableta-->
+                  <source srcset="./images/growing_t.png" media="(min-width: 768px)" />
+                  <img src="images/growing_m.png" alt="writing at keyboard" />
+                </picture>
+
                 <div class="overlay">
                   <p></p>
                 </div>
@@ -278,7 +358,7 @@
   </footer>
 
 
-  
+
 
 </body>
 
