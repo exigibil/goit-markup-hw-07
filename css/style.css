@@ -659,7 +659,7 @@ textarea:focus {
   flex-wrap: wrap;
   flex-basis: calc((100% - 239px) / 3);
   justify-content: center;
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
 }
 
