@@ -160,7 +160,7 @@ body {
   line-height: 22px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: rgba(33, 33, 33, 1);
+  color: var(--link-color-hover);
 }
 
 /* hover and focus mobile*/
@@ -657,8 +657,10 @@ textarea:focus {
 .regular-customers {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 226px) / 3);
+  flex-basis: calc((100% - 239px) / 3);
   justify-content: center;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .regularcustomersicon {
@@ -668,6 +670,7 @@ textarea:focus {
   border: 1px;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -921,6 +924,7 @@ li .button:hover {
   width: 170px;
   align-items: center;
   align-content: center;
+  box-sizing: border-box;
 }
 
 .regularcustomersicon {
@@ -1329,7 +1333,7 @@ li .button:hover {
   }
 
   .regular-customers {
-    flex-wrap: nowrap;
+   flex-wrap: nowrap;
     flex-direction: row;
   }
 
