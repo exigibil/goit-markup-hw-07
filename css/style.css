@@ -652,6 +652,7 @@ textarea:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
 }
 
 .regular-customers {
@@ -659,8 +660,10 @@ textarea:focus {
   flex-wrap: wrap;
   flex-basis: calc((100% - 10px) / 2);
   justify-content: center;
+  align-items: center;
   width: 100%;
   box-sizing: border-box;
+  
 }
 
 .regularcustomersicon {
@@ -1120,11 +1123,15 @@ li .button:hover {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+  
   }
 
   .ourteam {
-    flex-basis: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 150px) / 2);  
   }
+
+
 
   .aboutus {
     flex-wrap: wrap;
