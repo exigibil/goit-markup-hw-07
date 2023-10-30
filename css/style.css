@@ -657,7 +657,7 @@ textarea:focus {
 .regular-customers {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc((100% - 239px) / 3);
+  flex-basis: calc((100% - 10px) / 2);
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
