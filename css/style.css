@@ -1127,10 +1127,6 @@ li .button:hover {
   
   }
 
-  .ourteam {
-    flex-basis: calc((100% - 150px) / 2);  
-  }
-
 
 
   .aboutus {
